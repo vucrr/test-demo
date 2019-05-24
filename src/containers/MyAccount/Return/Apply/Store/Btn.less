@@ -1,0 +1,18 @@
+@import '../../../../../themes/vars.less';
+
+.btn {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    height: 44px !important;
+    line-height: 44px !important;
+    background-color: @primary-color;
+    color: #fff !important;
+    &:before {
+        border: none !important;
+    }
+}
+.btn[aria-disabled=true] {
+    opacity: 1;
+    background-color: #FEBCB5 !important;
+}

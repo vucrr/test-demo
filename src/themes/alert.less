@@ -1,0 +1,100 @@
+@import "./mixin.less";
+
+:global {
+    .am-modal.am-modal-transparent.am-modal-android {
+        width: 300px;
+
+        .am-modal-content {
+            border-radius: 8px;
+            padding: 24px 0 0;
+
+            .am-modal-header {
+                padding: 0 28px 12px;
+
+                .am-modal-title {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #333;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            .am-modal-body {
+                padding: 0 28px 20px;
+
+                .am-modal-alert-content {
+                    word-break: break-all;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 21px;
+                }
+            }
+
+            .am-modal-footer {
+                padding-bottom: 0;
+                box-shadow: 0 -0.5px #EEEEEE;
+
+                .am-modal-button-group-h {
+                    justify-content: space-between;
+                    padding: 0;
+
+                    &:before {
+                        content: none;
+                    }
+
+                    .am-modal-button {
+                        height: 48px;
+                        line-height: 48px;
+                        box-sizing: border-box;
+                        flex: 1;
+                        background-color: #F8F8F8;
+                        font-size: 16px;
+                        color: #AAAAAA;
+                        margin-left: 0;
+                        box-shadow: -0.5px 0 #EEEEEE;
+                    }
+
+                    .am-modal-button:last-child {
+                        background-color: #F8F8F8;
+                        color: #00AA99;
+
+                        &:before {
+                            content: none;
+                        }
+                    }
+                }
+
+                .am-modal-button-group-normal.am-modal-button-group-v {
+                    padding: 0;
+
+                    .am-modal-button {
+                        background-color: #F8F8F8;
+                        color: #00AA99;
+                        font-size: 16px;
+                        height: 48px;
+                        line-height: 48px;
+                        width: 100%;
+                        margin-left: 0;
+
+                        &:before {
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .easeu {
+        .am-modal-button:last-child {
+            color: @easeu-color !important;
+        }
+
+        .am-modal.am-modal-transparent.am-modal-android {
+            .am-modal-content {
+                border-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.top_box {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.top_box p {
+  font-family: DINPro-Medium;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+.top_box span {
+  font-size: 12px;
+  color: #666666;
+}
+.nav_box {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.nav_box .item {
+  background-color: #F8F8F8;
+  padding: 3px 0 3px 15px;
+}
+.nav_box span {
+  color: #222222;
+}
+.nav_box :global .am-list-arrow {
+  width: 10px !important;
+  height: 10px !important;
+}
+.nav_box :global .am-list-body {
+  border: none !important;
+}
+.nav_box :global .am-list-body div:not(:last-child) .am-list-line {
+  border-bottom: 1px solid #eeeeee;
+}

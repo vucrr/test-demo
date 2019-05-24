@@ -1,0 +1,32 @@
+.backtop_box {
+    position: fixed;
+    right: 15px;
+    bottom: calc(70px + env(safe-area-inset-bottom));
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+
+    &.show {
+        z-index: 999;
+        opacity: 1;
+    }
+
+    .icon_box {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            transform: rotateZ(90deg);
+        }
+    }
+}

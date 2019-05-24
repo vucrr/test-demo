@@ -1,0 +1,109 @@
+.reliable {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FAF4F2;
+    overflow: auto;
+    .animated_style {
+        animation-duration: 2s;
+        text-align: center;
+        z-index: 2;
+        margin-top: 28px;
+        position: relative;
+        .title {
+            font-size: 29px;
+            color: #FF4608;
+            font-family:FZLTXHK--GBK1-0;
+            font-weight: 100px;
+            text-align: center; 
+        }
+        .title_dec {
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 100;
+            font-family:FZLTXHK--GBK1-0;
+            color:rgba(135,135,135,1);
+        }
+    }
+    .item_list {
+        z-index: 2;
+        margin: 51px 0 0 30px;
+        position: relative;
+        .item_member {
+            margin-top: 48px;
+            img {
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 38px;
+            }
+            .member_text {
+                margin-left: 30px;
+                .text_top {
+                    font-size: 17px;
+                    font-weight:bold;
+                    color:rgba(51,51,51,1);
+                    margin-bottom: 10px;
+                }
+                .text_bottom {
+                    font-size:12px;
+                    font-weight:300;
+                    color:rgba(51,51,51,1);
+                }
+            }
+        }
+        
+    }
+    .lease_btn {
+        position: absolute;
+        background-color: #F45D2B;
+        z-index: 2;
+        font-size:16px;
+        padding: 16px 90px;
+        font-family:HiraginoSansGB-W6;
+        font-weight:normal;
+        text-align: center;
+        box-shadow:0px 10px 6px 0px rgba(242,128,90,0.33);
+        border-radius: 49px;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        .lease_text {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color:rgba(255,255,255,1)
+        }
+    }
+    .arroundEarth {
+        position: absolute;
+        width: 100%;
+        left: -42%;
+        top:87px;
+        -webkit-animation:earthRotate 10s linear infinite;
+        animation:earthRotate 10s linear infinite;
+    }
+
+    @-webkit-keyframes earthRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+    @keyframes earthRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+
+    .arroundAstronaut {
+        position: absolute;
+        width: 18%;
+        right: 44px;
+        bottom: 156px;
+        animation:astronautAnimate 3s ease-in-out infinite alternate;
+    }
+    @keyframes astronautAnimate{
+        0%   {transform: scale(1)}
+        100% {transform: scale(.8)}
+    }
+}
+

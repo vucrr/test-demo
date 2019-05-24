@@ -1,0 +1,60 @@
+// Beta Test
+
+GET http://m.beta.xianghuanji.com/node-api/home HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+###
+
+GET http://m.beta.xianghuanji.com/node-api/product/category HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+###
+
+// Dev Test
+
+GET http://localhost:3000/node-api/home HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+###
+
+// Dev Test
+
+POST http://localhost:3000/node-api/product/detail/userOauth/saveRedirectUrl HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+{
+    redirect_url: ''
+}
+
+###
+
+GET http://localhost:3000/node-api/account/privilege/list HTTP/1.1
+Host: localhost:3000
+userToken: LOuKjZipCVcnq53lGot0rA==
+userIdV2: HaesM7ZxKR0=
+
+###
+
+
+GET http://m.beta.xianghuanji.com/node-api/account/privilege/code HTTP/1.1
+# Host: localhost:3000
+userToken: ePHNJpE4yHTts+c4u26PP61qiLT6N4M9
+userIdV2: ePHNJpE4yHStaoi0+jeDPQ==
+sign: 
+
+###
+
+GET http://localhost:3000/node-api/easeu/trade/?flow_code=20180810104935260801 HTTP/1.1
+# Host: localhost:3000
+userToken: /AB3AK2IaNzwhFOzphAiIQ==
+channelId: 41
+
+###

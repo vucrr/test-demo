@@ -1,0 +1,143 @@
+@import "../../../../themes/mixin";
+
+.header {
+    padding: 8px 0 4px;
+    h4 {
+        font-size: 16px;
+        color: #333333;
+        font-weight: normal;
+        margin-bottom: 8px;
+        line-height: 1;
+    }
+
+    span {
+        font-size: 13px;
+        color: #999999;
+    }
+
+    .link {
+        display: block;
+        margin-top: 12px;
+        color: #2CB5A9;
+    }
+}
+
+.icon_list {
+    font-size: 13px;
+    color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    max-height: 255px;
+    overflow: scroll;
+
+    .item {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &:nth-child(even) {
+            padding-left: 12px;
+        }
+
+        &:nth-last-child(2), &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin-right: 8px;
+        }
+    }
+}
+
+.title_box {
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    margin: 32px 0;
+    .title {
+        margin-bottom: 12px;
+    }
+}
+
+.form_wrap {
+    position: fixed;
+    background-color: #fff;
+    z-index: 990;
+    width: 100%;
+    transform: translateX(100vw);
+    top: 45px;
+    bottom: 0;
+    transition: transform .3s ease;
+    padding: 0 15px;
+
+    &.active {
+        transform: translateX(0);
+    }
+    &.isInApp {
+        top: 0;
+    }
+
+    :global {
+        .am-list-item {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+.form_box {
+    .tips_icon {
+        color: #00A699;
+        width: 16px;
+        height: 16px;
+    }
+    .btn_sms {
+        color: @primary-color;
+        &.disabled {
+            opacity: .5;
+        }
+    } 
+    :global {
+        .am-list-line:after {
+            bottom: 1px !important;
+        }
+    }
+}
+
+.input_sms {
+    margin-bottom: 24px;
+    :global {
+        .am-input-extra {
+            width: 96px;
+            max-height: 48px;
+            height: 48px;
+            line-height: 48px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .am-list-line {
+            background: #F8F8F8;
+            border: 1px solid #F2F2F2;
+            border-radius: 4px;
+            padding-right: 0;
+            &::after {
+                background-color: #F2F2F2 !important;
+            }
+
+            input {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+
+.btn_submit_box {
+    padding: 24px 15px;
+}

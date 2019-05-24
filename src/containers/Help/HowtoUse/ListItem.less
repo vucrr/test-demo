@@ -1,0 +1,44 @@
+@import "../../../themes/mixin.less";
+
+.list_box {
+    background-color: #fff;
+    padding-bottom: 8px;
+
+    &.full {
+        min-height: calc(100vh - 140px);
+    }
+    .title {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .badge {
+        background-color: #FF4D40;
+        display: inline-block;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        margin-right: 10px;
+        color: #fff;
+    }
+    :global {
+        .am-list-body::after {
+            background-color: #fff !important;
+        }
+
+        .am-list-brief {
+            font-size: 14px !important;
+            color: @xhj-gray-light !important;
+        }
+        .am-list-brief {
+            display: block !important;
+            margin-top: 0 !important;
+            margin-left: 0 !important;
+            &:first-of-type{
+                margin-top: 6px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import '../../../themes/mixin.less';
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: 152px;
+    border-bottom: 0.5px solid #eee;
+    padding: 12px 0;
+    background-color: white;
+
+    .thumb {
+        position: relative;
+        margin-right: 12px;
+
+        img {
+            width: 128px;
+            height: 128px;
+            display: block;
+        }
+    
+        span {
+            background-image: linear-gradient(-134deg, #FA7676 0%, #FB4040 100%);
+            font-size: 13px;
+            color: #FFFFFF;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            padding: 3px 7px;
+            display: inline-block;
+            border-radius: 4px 10px 10px 10px;
+        }
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #323232;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin: 8px 0 4px;
+        width: 100%;
+    }
+
+    .desc {
+        height: 14px;
+        font-size: 10px;
+        line-height: 14px;
+        color: #999999;
+        margin-bottom: 8px;
+        .ellipsis(211px);
+    }
+
+    .tags {
+        height: 13px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+       .tag {
+            border: 1px solid #FF5544;
+            border-radius: 6.5px;
+            color: #FF5544;
+            font-size: 9px;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 9px;
+            padding: 1px 3px;
+            margin-right: 4px;
+            margin-bottom: 4px; // 兼容处理
+        }
+    }
+
+    .prices {
+        margin-bottom: 8px;
+        color: #FF5544; 
+        line-height: 1;
+        display: flex;
+        align-items: baseline;
+
+        .price {
+            display: inline-flex;
+            align-items: baseline;
+            font-size: 20px;
+            font-weight: bold;
+
+            .prefix {
+                line-height: 1;
+                font-size: 16px;
+            }
+        }
+
+        .unit {
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .line {
+            font-size: 12px;
+            color: #CCCCCC;
+            line-height: 10px;
+            text-decoration: line-through;
+        }
+    }
+
+    .compares {
+        .item_left {
+            margin-right: 8px;
+        }
+
+        :global {
+            .am-flexbox {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .icon {
+            width: 12px;
+            height: 12px;
+            margin-right: 4px;
+        }
+
+        .text {
+            font-size: 10px;
+            color: #666666;
+            letter-spacing: 0;
+            line-height: 10px;
+        }
+    }
+}

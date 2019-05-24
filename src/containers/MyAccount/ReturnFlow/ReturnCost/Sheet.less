@@ -1,0 +1,70 @@
+@keyframes up {
+    0% {height: 0px}
+
+    to {height: 335px}
+}
+.sheet {
+    display: none;
+    background: rgba(0,0,0,.5) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    font-family: PingFangSC-Regular;
+    .pop_machine {
+        z-index: 6;
+        position: absolute;
+        // transition: height .5s;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        animation: up .3s ease-in 1;
+        height: 0px;
+        .pop_close {
+            position: absolute;
+            top: 12px;
+            right: 14.7px;
+            width: 24px;
+            height: 24px;
+            color: #999;
+        }
+        h2 {
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 48px;
+            font-weight: normal;
+            border-bottom: 1px solid #E8E8E8;
+        }
+        .cost_detail {
+            margin: 24px 22px 0 15px;
+            h3, p {
+                font-size: 13px;
+                color: #999999;
+                font-weight: normal;
+                line-height: 16px;
+                margin-bottom: 10px;
+                margin-top: 6px;
+            }
+            h4 {
+                font-size: 14px;
+                color: #333333;
+                font-weight: normal;
+                line-height: 28px;
+                span {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.show {
+    display: block;
+    .pop_machine {
+        height: 335px;
+    }
+}

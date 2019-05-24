@@ -1,0 +1,78 @@
+.banner{
+    width: 100%;
+    >img{
+        width: 100%;
+    }
+    .banner_channel,.banner_weixin {
+        display: none;
+    }
+}
+
+.advantage{
+    margin: -17% .24rem 0;
+    position: relative;
+    .item{
+        background-color: #fff;
+        border-bottom: none;
+        height: 1.28rem;
+        // padding: .26rem 0 0 .28rem;
+        border-bottom: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        border-left: 1px solid rgba(0,0,0,.03);
+        border-right: 1px solid rgba(0,0,0,.03);
+        :global {
+            .am-list-thumb:first-child {
+                margin-right: 0;
+            }
+            .am-list-line::after {
+                height: 0 !important;
+            }
+        }
+        &:first-of-type {
+            border-radius: 6px 6px 0 0;
+            border-top: 1px solid rgba(0,0,0,.03);
+        }
+        &:last-of-type{
+            border-radius: 0 0 6px 6px;
+            border-bottom: 0 solid #f2f2f2;
+            box-shadow: 0 4px 6px 0 rgba(0,0,0,.05);
+        }
+        &:last-child{
+            border-bottom: 0;
+        }
+        .iconfont{
+            font-size: .4rem;
+            line-height: .76rem;
+            color: #5C7096;
+        }
+        .title{
+            margin: 0 .16rem 0 .2rem;
+            font-size: .3rem;
+            color: #333;
+            line-height: .76rem;
+        }
+        .desc{
+            display: inline-block;
+            font-size: 13px;
+            color: #999; 
+            line-height: .76rem;  
+        }
+        .desc_br{
+            vertical-align: middle;
+            line-height: .4rem;
+        }
+    }
+    .tips{
+        margin-top: .32rem;
+        font-size: .24rem;
+        color: #999;
+        text-align: center;
+    }
+    .caidan {
+        display: block;
+    }
+    .icon {
+        width: 19.2px;
+        height: 19.2px;
+    }
+}

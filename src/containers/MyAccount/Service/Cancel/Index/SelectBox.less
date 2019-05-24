@@ -1,0 +1,63 @@
+.container {
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+
+    :global {
+        .am-list-item {
+            background-color: #F8F8F8;
+
+            &:first-child {
+                border-radius: 4px 4px 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 4px 4px;
+            }
+
+            .am-list-extra {
+                color: #aaa;
+            }
+        }
+    }
+
+    .cancelInput {
+        :global {
+            .am-list-item {
+                flex: 1;
+            }
+
+            .am-list-content {
+                padding: 0;
+                display: flex;
+
+                span {
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+
+    .fixedButton {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.modalWrapper {
+    .list_box {
+        // margin-bottom: 50px;
+    }
+
+    .submit {
+        position: fixed !important;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+

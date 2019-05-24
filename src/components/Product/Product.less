@@ -1,0 +1,200 @@
+@import '../../themes/mixin.less';
+
+.product {
+    display: block;
+    color: @xhj-gray-dark;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    .thumb {
+        background-color: #f2f2f2;
+        position: relative;
+
+        img {
+            display: block;
+        }
+
+        .badge {
+            background-color: @primary-color;
+            font-size: 12px;
+            display: inline-block;
+            padding: 3px 4px;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+
+            &.used {
+                background-color: @second-color;
+            }
+        }
+
+        .icon_box {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            .icon {
+                display: block;
+                width: 36px;
+                height: 36px;
+            }
+
+            span {
+                display: block;
+                height: 36px;
+                line-height: 36px;
+                font-size: 12px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 36px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+
+    .text_box {
+        line-height: 1;
+
+        .title {
+            display: block;
+        }
+
+        .des {
+            display: block;
+            color: @xhj-gray-light;
+        }
+
+        .price {
+            color: @primary-color;
+        }
+
+        .old_price {
+            color: @xhj-gray-light;
+            text-decoration: line-through;
+        }
+
+        .unit {
+            font-size: 10px;
+        }
+    }
+
+    &.sm, &.md {
+        .text_box {
+            padding: 9px 6px 3px;
+
+            .title {
+                margin-bottom: 6px;
+            }
+    
+            .des {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+    
+            .price_box {
+                height: 26px;
+            }
+    
+            .price {
+                font-size: 13px;
+                margin-right: 3px;
+            }
+
+            .unit {
+                font-size: 10px;
+            }
+    
+            .old_price {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.sm {
+        .thumb {
+            img {
+                width: 124px;
+                height: 124px;
+            }
+        }
+    }
+
+    &.md {
+        .thumb {
+            img {
+                width: 144px;
+                height: 144px;
+            }
+        }
+        .text_box {
+            .price_box {
+                height: 18px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &.xs{
+        .thumb {
+            background-color: #f2f2f2;
+            padding-top: 6px;
+            img {
+                width: 95px;
+                height: 95px;
+            }
+        }
+
+        .text_box {
+            padding: 6px;
+
+            .title {
+                font-size: 13px;
+                height: 40px;
+                line-height: 1.5;
+                margin-bottom: 3px;
+            }
+    
+            .des {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+    
+            .price {
+                font-size: 13px;
+                margin-right: 3px;
+            }
+    
+            .old_price {
+                font-size: 12px;
+            }
+        }
+    }
+    &.recommend {
+        .title {
+            height: 20px !important;
+            text-align: center;
+            font-size: 14px !important;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .price {
+            // color: #333333;
+            font-size: 12px;
+            line-height: 14px;
+            display: block;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+        .old_price {
+            display: block;
+            text-align: center;
+        }
+    }
+}

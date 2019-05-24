@@ -1,0 +1,109 @@
+.service_box {
+    padding: 15px 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    &.empty {
+        padding: 0 !important;
+        margin-bottom: 24px;
+        .list {
+            padding: 0 !important;
+        }
+    }
+
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 16px;
+    }
+
+    .list {
+        .item {
+            padding-bottom: 10px;
+
+            .icon {
+                color: #00A699;
+                width: 14px;
+                height: 14px;
+                margin-top: 3px;
+                margin-right: 4px;
+            }
+
+            p {
+                flex: 1;
+                font-size: 14px;
+                color: #999;
+                line-height: 20px;
+            }
+        }
+
+        .extend {
+            height: 0;
+            overflow: hidden;
+            transition: height .25s ease-in-out;
+        }
+    }
+
+    &.exchange {
+        padding: 15px 0 20px;
+        .list {
+            background: #F8F8F8;
+            border-radius: 4px 4px 0 0;
+            padding: 16px 0 0 15px;
+        }
+    }
+    
+}
+.exchange {
+    .title {
+        font-size: 16px;
+        color: #333333;
+        margin-top: 8px;
+    }
+}
+.opt_box {
+    padding: 16px 0 1px;
+    margin-top: 5px;
+    color: #999;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: #e6e6e6;
+        display: block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.02rem;
+        transform-origin: 50% 100%;
+        transform: scaleY(.5);
+    }
+
+    span {
+        margin-right: 4px;
+    }
+
+    .icon {
+        width: 12px;
+        height: 12px;
+        transform: rotateZ(90deg);
+        transition: transform .25s ease-in-out;
+    }
+
+    &.open {
+        .icon {
+            transform: rotateZ(270deg);
+        }
+    }
+
+    &.exchange {
+        padding: 16px 0;
+        margin-top: 0;
+        background: #F8F8F8;
+        border-radius: 0 0 4px 4px;
+    }
+}

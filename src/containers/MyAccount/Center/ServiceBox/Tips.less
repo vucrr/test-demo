@@ -1,0 +1,33 @@
+.tips_box {
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    border-radius: 4px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 7px 0 10px;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+
+    .tips {
+        color: #fff;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: -10px;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-bottom-color: rgba(0,0,0,0.8);
+    }
+
+    &.active {
+        top: 35px;
+        opacity: 1;
+    }
+}

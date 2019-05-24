@@ -1,0 +1,130 @@
+@import '../../../themes/mixin.less';
+.promotion {
+    background: #F8F8F8;
+    border-radius: 4px;
+    div {
+        height: 48px;
+        border-bottom: 1px solid #EEEEEE;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    span {
+        border: 1px solid @primary-color;
+        text-align: center;
+        border-radius: 2px;
+        color: @primary-color;
+        font-size: 12px;
+        min-width: 30px;
+        line-height: 16px;
+        vertical-align: top;
+        margin: 0 12px 0 18px;
+    }
+    p {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 18px;
+        color: #333333;
+        width: 245px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .icon {
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+    }
+}
+
+.popup_modal_box {
+    .header {
+        // padding: 16px;
+        line-height: 48px;
+        text-align: center;
+        border-bottom: 1px solid #E8E8E8;
+        color: #333;
+        font-size: 16px;
+        position: relative;
+
+        .btn_close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            color: #BBB;
+        }
+    }
+
+    .body {
+        padding: 16px 15px;
+        height: 286px;
+        overflow-y: scroll;
+        >div {
+            height: 80px;
+            background: #F8F8F8;
+            border-radius: 4px;
+            padding: 0 18px;
+            margin-bottom: 10px;
+        }
+        .imgtp {
+            img {
+                border-radius: 4px;
+            }
+           
+        }
+        .listtext {
+            margin-left: 18px !important;
+        }
+        img {
+            height: 48px;
+            width: 48px;
+        }
+        h5 {
+            font-size: 14px;
+            color: #333333;
+            line-height: 21px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 12px;
+            color: #999999;
+            line-height: 12px;
+        }
+        // :global {
+        //     table {
+        //         width: 100%;
+        //         border-collapse: collapse;
+        //         border-spacing: 0;
+        //         font-size: 13px;
+        //         text-align: center;
+        //         margin-bottom: 16px;
+        //         color: #333;
+    
+        //         tbody tr:nth-child(2n + 1) {
+        //             background-color: #f8f8f8;
+        //         }
+    
+    
+        //         th {
+        //             height: 40px;
+        //             line-height: 40px;
+        //         }
+    
+        //         td {
+        //             height: 40px;
+        //             line-height: 1.2;
+        //             border: 1px solid #f2f2f2;
+    
+        //             &:nth-child(2) {
+        //                 width: 38%;
+        //             }
+
+        //             &:nth-child(1) {
+        //                 color: #999;
+        //                 width: 24%;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

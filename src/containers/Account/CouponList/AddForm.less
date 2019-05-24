@@ -1,0 +1,23 @@
+@import '../../../themes/mixin.less';
+
+.form_box {
+    margin: 15px 15px 0;
+
+    :global {
+        .am-list-item.am-input-item {
+            height: 50px;
+        }
+    }
+
+    .btn_add {
+        background-color: @primary-color;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+
+        &.disabled {
+            background-color: #d3d3d3;
+        }
+    }
+}

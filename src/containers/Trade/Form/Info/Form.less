@@ -1,0 +1,189 @@
+@import "../../../../themes/mixin";
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: @xhj-gray-dark;
+  border-bottom: 1px solid #EEE;
+}
+
+.tip {
+  margin: 12px 15px 16px;
+  font-size: 13px;
+  color: @xhj-gray-light;
+}
+
+.termsWrapper {
+  margin: 2px 15px 12px;
+  font-size: 13px;
+  line-height: 20px;
+  color: @xhj-gray-light;
+  .term {
+    line-height: 20px;
+    color: @xhj-blue;
+  }
+     p {
+         margin-top: 16px;
+         text-align: center;
+         font-size: 12px;
+         color: #ccc;
+     }
+}
+
+.submit {
+  margin: 16px auto 24px;
+  width: 300px;
+}
+
+.idCardWrapper {
+  margin: 10px 0;
+  background-color: @xhj-white;
+
+  .list {
+    margin: 16px 15px 0;
+    font-size: 14px;
+    color: @xhj-gray;
+    line-height: 21px;
+  }
+}
+
+.uploadWrapper {
+  margin: 24px 0;
+}
+
+.inputsWrapper,
+.pictureWrapper {
+  background-color: @xhj-white;
+}
+
+.pictureWrapper {
+  margin-bottom: 10px;
+}
+
+.inputsWrapper {
+  .input {
+    height: 48px;
+    :global {
+      .am-input-label {
+        font-size: 14px;
+        color: #333333;
+      }
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.upload {
+  :global {
+    .am-image-picker-list .am-image-picker-item .am-image-picker-item-remove {
+      background-size: 0.4rem auto;
+      width: 20px;
+      height: 20px;
+    }
+    .am-image-picker-list {
+      padding: 0;
+      margin-bottom: 16px;
+    }
+    .am-flexbox-align-center {
+      justify-content: center;
+      margin: 0;
+    }
+    .am-flexbox-item {
+      &::before {
+        font-size: 16px;
+        color: #333;
+        position: absolute;
+        z-index: 100;
+        top: 126px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:first-child {
+        flex: 0 1 300px;
+        height: 190px;
+        background-color: #f8f8f8;
+        margin-right: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:last-child {
+        display: none;
+      }
+
+      .am-image-picker-upload-btn {
+        border: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:before,
+        &:after {
+          border-radius: 2px;
+          top: 84px;
+          background-color: #cccccc;
+        }
+        &:before {
+          width: 46px;
+          height: 4px;
+        }
+        &:after {
+          height: 46px;
+          width: 4px;
+        }
+      }
+    }
+  }
+
+  &.id_card_1 {
+    :global {
+      .am-flexbox-item::before {
+        content: '人像面照片';
+      }
+
+      .am-image-picker-upload-btn {
+        background-image: url('/static/images/common/id-card-1.png');
+      }
+    }
+  }
+
+  &.id_card_2 {
+    :global {
+      .am-flexbox-item::before {
+        content: '国徽面照片';
+      }
+      .am-image-picker-upload-btn {
+        background-image: url('/static/images/common/id-card-2.png');
+      }
+    }
+  }
+
+  &.id_card_3 {
+    :global {
+      .am-flexbox-item::before {
+        content: '上传免冠照片';
+      }
+      .am-image-picker-upload-btn {
+        background-image: url('/static/images/common/id-card-3.png');
+      }
+    }
+  }
+
+  &.selected {
+    :global {
+      .am-flexbox-item::before {
+        content: '' !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="Keywords" content="半价换新机, 小吴, 手机租赁，租手机，iPhone，小米，三星，平板租赁，爱回收，晋松，芝麻信用，蚂蚁花呗"
+    />
+    <meta name="description"
+          content="【半价换新机 就在享换机】享换机专业的手机信用租赁平台，为用户提供租赁·维修·换机一站式用机服务。帮助用户只为使用付费，年年低价换新机。目前已经与芝麻信用、蚂蚁花呗、三星等知名企业展开战略合作。"
+    />
+    <link rel="icon" href="//mstaticc.xianghuanji.com/favicon.ico" type="image/x-icon"/>
+    <title>享换机</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB W3", Helvetica, "Heiti SC", "Droid Sans", "Droidsansfallback", sans-serif;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            height: 45px;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header span {
+            font-size: 1rem;
+        }
+
+        .left-icon {
+            padding: 10px 15px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .left-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .image-wrapper {
+            width: 175px;
+            height: 260px;
+        }
+
+        .error {
+            width: 175px;
+            margin: 40px 0;
+        }
+
+        button {
+            color: #f54;
+            border: 1px solid currentColor;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: transparent;
+            text-decoration: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: space-between;
+            width: 245px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left-icon" id="phone">
+        <svg viewBox="0 0 1024 1024" id="phone" width="100%" height="100%">
+            <path fill="white"
+                  d="M283.072 726.528A559.616 559.616 0 0 1 160.64 266.816l-53.248-63.872a626.112 626.112 0 0 0 125.12 565.952 626.048 626.048 0 0 0 532.224 221.824l-53.248-63.872a559.616 559.616 0 0 1-428.416-200.32z m0 0A559.616 559.616 0 0 1 160.64 266.816l-53.248-63.872a626.112 626.112 0 0 0 125.12 565.952 626.048 626.048 0 0 0 532.224 221.824l-53.248-63.872a559.616 559.616 0 0 1-428.416-200.32z m621.312 124.608l-170.048-202.624c0.32 0.256-24.832 21.632-75.392 64a98.88 98.88 0 0 0-11.776 139.968l41.6 49.6a99.52 99.52 0 0 0 139.84 12.672l75.776-63.616z m-33.408 114.176a165.504 165.504 0 0 1-232.768-20.864l-41.6-49.536a164.864 164.864 0 0 1 19.904-232.896l75.84-63.616a65.984 65.984 0 0 1 92.544 7.68l170.432 203.072a65.536 65.536 0 0 1-8.512 92.48l-75.84 63.68zM267.84 92.48c0.256 0.32-24.896 21.696-75.456 64.064a98.88 98.88 0 0 0-11.776 139.968l41.6 49.536a99.52 99.52 0 0 0 139.84 12.736l75.84-63.68-170.048-202.624z m136.64 316.8a165.504 165.504 0 0 1-232.832-20.8l-41.6-49.536a164.864 164.864 0 0 1 19.968-232.96L225.792 42.496a65.984 65.984 0 0 1 92.608 7.68l170.432 203.072a65.536 65.536 0 0 1-8.512 92.48l-75.84 63.616z"
+                  p-id="6977"></path>
+        </svg>
+    </div>
+    <span>服务器错误</span>
+</div>
+<main>
+    <div class="image-wrapper">
+        <img class="error" src="//mstaticc.xianghuanji.com/build/images/common/error_bg.png" alt="error page">
+    </div>
+    <span>抱歉哦~您访问的页面已经逃离地球表面</span>
+    <div class="btns">
+        <button id="home">返回首页</button>
+        <button id="reload">重新加载</button>
+    </div>
+</main>
+<script>
+  window.onload = function() {
+    const $phone = document.getElementById('phone')
+    const $home = document.getElementById('home')
+    const $reload = document.getElementById('reload')
+
+    function handleCall () {
+      window.location.href = 'tel://400-670-0188'
+    }
+
+    function handleGoHome () {
+      window.location.href = '/'
+    }
+
+    function handleReload () {
+      window.location.reload()
+    }
+
+    $reload.addEventListener('click', handleReload)
+    $home.addEventListener('click', handleGoHome)
+    $phone.addEventListener('click', handleCall)
+  }
+</script>
+</body>
+</html>

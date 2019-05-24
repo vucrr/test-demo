@@ -1,0 +1,133 @@
+.searchBox {
+    padding: 24px 15px 0;
+    &.showCancelBox{
+        padding: 12px 15px 12px;
+        border-bottom: .5px solid #EEEEEE;
+    }
+    .title {
+        font-size: 18px;
+        color: #333333;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .subtit{
+        font-size: 14px;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .inputWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .searchInput {
+        width: 100%;
+        border-radius: 4px;
+        &.showCancel {
+            width: 302px;
+        }
+        .icon {
+            width: 16px;
+            height: 16px;
+            color: #bbb;
+        }   
+    }
+    .btnCancel {
+        line-height: 48px;
+        font-size: 14px;
+        color: #00AA99;
+    }
+    :global {
+        .am-list-item{
+            background-color: #f8f8f8;
+            height:40px;
+        }
+        .am-list-item .am-input-label.am-input-label-5 {
+            width: 20px;
+            // margin-top: 2px;
+        }
+
+        html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line:after {
+            background-color: #f8f8f8;
+        }
+        html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line {
+            border-bottom: none;
+        }
+        .am-list-line:after {
+            background-color: #f8f8f8 !important;
+        }
+        .am-list-item .am-list-line {
+            min-height:  40px !important;
+        }            
+    }
+}
+
+.noneBox {
+    margin: 16px 0 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    .text {
+        font-style: normal;
+        color: #ff5544;
+    }
+}
+
+.resultBox {
+    // margin-top: 24px;
+    padding: 0px 15px;
+}
+.checkNumber{
+    position: fixed !important;
+    bottom: 44px;
+    left: 0;
+    width: 100%;
+    height:32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+    color: #CB9A04;
+    background: #FFF1B0;
+}
+
+.btn {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px !important;
+    line-height: 44px !important;
+}
+
+.recommendBox {
+    padding: 24px 15px 50px;
+    .title {
+        // margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: #333333;
+    }
+    .btnChange {
+        display: flex;
+        color: #00AA99;
+        .icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+            color:#00AA99;
+            &.active {
+                animation: circle .5s infinite linear;
+            }
+        }
+    }
+}
+
+@keyframes circle {
+    to {
+        transform: rotate(1turn)
+    }
+}

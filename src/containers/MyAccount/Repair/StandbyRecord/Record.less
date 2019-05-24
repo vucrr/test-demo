@@ -1,0 +1,51 @@
+.record {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 0 15px 46px;
+    // height: 800px;
+    .rowTit {
+        line-height: 46px;
+        font-size: 16px;
+        color: #222222;
+        .main_tit {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        span{
+            color: #999999;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+        .status {
+            color: #FF5544;
+        }
+    }
+    .rowIntroduce {
+        background: #F9F9F9;
+        border-radius: 4px;
+        padding: 6px 15px;
+        line-height: 26px;
+        font-size: 13px;
+        color: #666666;
+    }
+    .link{
+        float: right;
+        border: 1px solid #E8E8E8;
+        border-radius: 2px;
+        margin: 8px 4px;
+        font-size: 13px;
+        color: #222222;
+        padding: 0 8px;
+        letter-spacing: -0.17px;
+        line-height: 30px;
+    }
+}
+.recordList {
+    background-color: #f2f2f2;
+    :global{
+        .am-list-body {
+            background-color: #f2f2f2;
+        }
+    }
+}

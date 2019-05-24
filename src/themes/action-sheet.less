@@ -1,0 +1,59 @@
+.popup_box {
+    .popup_title {
+        font-weight: normal;
+        position: relative;
+        z-index: 990;
+
+        .btn_close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #999;
+        }
+    }
+
+    .popup_body_box {
+        padding: 10px 15px;
+        font-size: 14px;
+
+        .gray_text {
+            font-size: 13px;
+            color: #999999;
+        }
+
+        .right_item {
+            text-align: right;
+        }
+    }
+
+    :global {
+        .am-action-sheet-button-list-item {
+            height: 40vh;
+            overflow: auto;
+            line-height: 2.5;
+            pointer-events: none; // 默认禁止body事件点击
+
+            &.am-action-sheet-button-list-item-active {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .wrap_box {
+        font-weight: bold;
+        padding: 5px 0;
+        position: relative;
+
+        &:first-child ::after {
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+            right: -15px;
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: #eee;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+}
+:global {
+  .am-image-picker-list .am-image-picker-item .am-image-picker-item-content {
+    background-position: center;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  :global {
+    .am-image-picker-item-remove {
+      display: none;
+    }
+  }
+}

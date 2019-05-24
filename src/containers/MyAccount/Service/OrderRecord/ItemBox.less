@@ -1,0 +1,57 @@
+@import "../../../../themes/mixin.less";
+
+.title_box {
+    font-family: PingFangSC-Medium;
+    margin-bottom: 16px;
+
+    .gray {
+        color: #666;
+    }
+
+    .blue_text {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #00A699;
+    }
+}
+
+.item_box {
+   margin-bottom: 24px; 
+}
+
+.item_list {
+    border-radius: 4px;
+    overflow: hidden;
+
+    .item {
+        background-color: #F8F8F8;
+        padding: 3px 0 3px 15px;
+
+        .label {
+            font-size: 14px;
+            margin-right: 30px;
+        }
+
+        .text {
+            // flex: 1;
+            display: block;
+            white-space: initial;
+            text-align: right;
+        }
+
+        .red {
+            font-size: 13px;
+            color: @primary-color;
+        }
+    }
+}
+.count{
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+    .icon{
+        width:13px;
+        height:13px;
+        margin-left:10px;
+    }
+}

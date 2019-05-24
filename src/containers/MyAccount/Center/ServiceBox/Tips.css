@@ -1,0 +1,39 @@
+.tips_box {
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 28px;
+  line-height: 28px;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+.tips_box .tips {
+  padding: 9px 0 7px;
+}
+.tips_box .tips .bottonTips {
+  color: #fff;
+  padding: 0 12px;
+  height: 12px;
+  line-height: 1;
+  border-right: 1px solid white;
+}
+.tips_box .tips .bottonTips:last-child {
+  border: none;
+}
+.tips_box::before {
+  content: '';
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+.tips_box.active {
+  top: 35px;
+  opacity: 1;
+}

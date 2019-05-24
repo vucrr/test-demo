@@ -1,0 +1,119 @@
+@import "../../../../themes/mixin";
+
+.container {
+    margin-bottom: 10px;
+}
+
+.round {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    min-width: 16px;
+}
+
+.selected {
+    .round;
+    background-color: #00A699;
+    position: relative;
+    &:before {
+        content: '';
+        width: 6px;
+        height: 4px;
+        border-left: 1px solid @xhj-white;
+        border-bottom: 1px solid @xhj-white;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        transform: rotate(-45deg);
+    }
+}
+
+.unselected {
+    .round;
+    background: #F7F7F7;
+    border: 1px solid #D3D3D3;
+}
+
+.content {
+    height: 96px;
+    background-color: @xhj-white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    .detail {
+        padding-left: 16px;
+        flex: 1;
+        .title {
+            font-size: 16px;
+            color: @xhj-gray-dark;
+        }
+        .address {
+            font-size: 14px;
+            color: @xhj-gray-light;
+            margin-top: 5px;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    height: 48px;
+    margin-top: 1px;
+    background-color: @xhj-white;
+    .btn {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        color: @xhj-gray-dark;
+    }
+    .divider {
+        width: 1px;
+        height: 24px;
+        background-color: @xhj-bg-fill;
+        margin-top: 12px;
+    }
+    span {
+        padding-left: 8px;
+    }
+}
+
+.mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+}
+
+.callPanel {
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    width: calc(100% - 30px);
+
+    .info {
+        display: flex;
+        margin-bottom: 12px;
+        border-radius: 2px;
+        background-color: #fff;
+        div {
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            width: 100%;
+            &:first-child {
+                font-size: 14px;
+                color: #999999;
+                border-bottom: 1px solid #f2f2f2;
+            }
+            &:last-child {
+                font-size: 18px;
+                color: @easeu-color;
+            }
+        }
+    }
+}

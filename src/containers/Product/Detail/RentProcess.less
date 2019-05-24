@@ -1,0 +1,67 @@
+.rent_process {
+    padding: 20px 15px 0;
+    line-height: 1;
+}
+
+.list {
+    padding-top: 8px;
+    .item {
+        padding-bottom: 24px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            width: 1px;
+            bottom: 0;
+            background-color: #FFEEEC;
+        }
+
+        &:last-child {
+            &::before {
+                height: 0;
+                bottom: auto;
+            }
+
+            padding-bottom: 0;
+        }
+
+        .icon_wrap {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #FFEEEC;
+            margin-right: 8px;
+            .icon {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        h5 {
+            font-weight: normal;
+            line-height: 18px;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #AAAAAA;
+            line-height: 20px;
+        }
+
+        .btn_blue {
+            font-size: 12px;
+            color: #00AA99;
+            line-height: 20px;
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../../themes/mixin";
+
+.container {
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 10px;
+
+    .title {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+            padding-left: 8px;
+        }
+    }
+
+    p {
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .btns {
+        display: flex;
+        .btn {
+            width: 167px;
+            height: 36px;
+            line-height: 36px;
+
+            &:last-child {
+                margin-left: 10px;
+            }
+
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+}

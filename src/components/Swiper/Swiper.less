@@ -1,0 +1,36 @@
+.swiper_wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    :global {
+        .swiper-pagination-bullets {
+            padding: 0 15px;
+        }
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background-color: #ccc;
+        }
+    }
+    
+    :global .active {
+        background-color: #FE5649;
+    }
+    
+    &.dot_right {
+        :global {
+            .swiper-pagination-bullets {
+                text-align: right;
+            }
+        }
+    }
+
+    &.dot_bottom {
+        padding-bottom: 36px;
+    }
+}

@@ -1,0 +1,54 @@
+@import "../../../../themes/mixin";
+
+.headerContainer {
+    position: relative;
+    .sub {
+        position: absolute;
+        top: 11px;
+        left: 50%;
+        transform: translateX(44px);
+        z-index: 1000;
+        font-size: 12px;
+        color: #333;
+    }
+    .xhj_sub {
+        color: #fff;
+    }
+    .headerIcon {
+        padding-top: 4px;
+        padding-right: 4px;
+        transform: rotate(-90deg);
+    }
+}
+
+.contentWrapper {
+    height: calc(100vh - 90px);
+    padding-bottom: 32px;
+    overflow-y: auto;
+    &.empty {
+        height: calc(100vh - 47px);
+    }
+    &.frozen {
+        overflow: hidden;
+    }
+    .content {
+        padding-top: 10px;
+    }
+}
+
+.selected {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF1B0;
+    color: #CB9A04;
+    font-size: 13px;
+    span {
+        padding-left: 8px;
+    }
+}

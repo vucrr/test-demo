@@ -1,0 +1,58 @@
+@import "../../themes/mixin";
+
+.switch {
+    display: inline-table;
+    align-items: center;
+    position: relative;
+
+    &.hiddenBox {
+        .text {
+            padding-left: 0;
+        }
+    }
+
+    .box {
+        background-color: #F8F8F8;
+        border: 1px solid #DDDDDD;
+        width: 14px;
+        height: 14px;
+        border-radius: 4px;
+        position: absolute;
+        margin-right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &.checked {
+            background-color: @xhj-blue;
+            border-color: @xhj-blue;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 6px;
+                height: 3px;
+                border-left: 0.04rem solid @xhj-white;
+                border-bottom: 0.04rem solid @xhj-white;
+                transform: rotate(-45deg);
+                top: 2px;
+                left: 2px;
+            }
+        }
+
+        &.round {
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+
+            &:before {
+                top: 3px;
+                left: 3px;
+            }
+        }
+    }
+
+    .text {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,116 @@
+@import '../../../../themes/mixin.less';
+
+.list_box {
+    padding: 0 12px;
+    margin-top: -22px;
+    position: relative;
+    margin-bottom: 12px;
+
+    :global {
+        .am-tabs-default-bar-tab {
+            font-size: 13px;
+            color: #666;
+            transition: font-size .1s ease-in-out;
+        }
+
+        .am-tabs-default-bar-tab-active {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .am-tabs-default-bar-underline {
+            width: 32px !important;
+            height: 3px;
+            background-color: #E3BE83;
+            border-radius: 1.5px;
+            margin-left: 8.5%; 
+        }
+
+        .am-tabs-default-bar {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            overflow: hidden;
+        }
+
+        .am-tabs-default-bar-tab {
+            // 1个tab样式
+            &:first-child:nth-last-child(2) ~ .am-tabs-default-bar-underline {
+                margin-left: 46%;
+                display: none;
+            }
+            // 2个tab样式
+            &:first-child:nth-last-child(3) ~ .am-tabs-default-bar-underline {
+                margin-left: 20.5%;
+            }
+            // 3个tab样式
+            &:first-child:nth-last-child(4) ~ .am-tabs-default-bar-underline {
+                margin-left: 12%;
+            }
+            // 4个tab样式
+            &:first-child:nth-last-child(5) ~ .am-tabs-default-bar-underline {
+                margin-left: 8.5%;
+            }
+        }
+    }
+
+    .tab_box {
+        box-shadow: 0 0 0 0 #EEEEEE;
+        // border-bottom: 1px solid #eee;
+    }
+}
+
+.list_wrap {
+    background-color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px 0 20px;
+
+    .btn {
+        height: 32px;
+        line-height: 30px;
+        .hex-to-rgba(#EDCE9B, .2);
+        background-color: @rgba;
+        border-radius: 16px;
+        text-align: center;
+        margin: 0 23px 12px;
+        span {
+            font-size: 12px;
+            color: #D3A458;
+        }
+    }
+
+    .desc {
+        font-size: 12px;
+        color: #CCCCCC;
+        text-align: center;
+    }
+}
+
+.list {
+    height: 184px;
+    overflow: hidden;
+    transition: height .25s ease-in-out;
+
+    .item {
+        width: 25%;
+        text-align: center;
+        padding: 12px 0;
+        line-height: 1;
+
+        img {
+            margin: 0 auto 8px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            line-height: 12px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.bg_color {
+  background-color: #fff;
+}
+.credit_top {
+  padding: 24px 15px 16px;
+}
+.credit_top h2 {
+  font-size: 16px;
+  color: #333333;
+  line-height: 18px;
+  font-weight: bold;
+}
+.credit_top p {
+  font-size: 12px;
+  color: #AAAAAA;
+  line-height: 1.5;
+  display: flex;
+}
+.credit_top p .icon {
+  width: 14px;
+  margin-right: 8px;
+}

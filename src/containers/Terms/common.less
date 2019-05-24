@@ -1,0 +1,166 @@
+.container {
+  padding: 10px 15px 20px;
+  line-height: 24px;
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0;
+  background-color: #fff;
+  .statement {
+      font-size: 12px;
+      color: #222;
+  }
+  .indent{
+    text-indent:1em;
+  }
+  h1 {
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin: 25px 0 15px;
+  }
+  h2 {
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  ol,
+  ul {
+    margin-left: 20px;
+    li {
+      line-height: 24px;
+      color: #666;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  }
+
+  p {
+    line-height: 21px;
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+    word-break: break-all;
+    text-align: justify;
+  }
+  .fill{
+    padding: 0 10px;
+    border-bottom: 1px solid #666;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 12px;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+
+        tbody tr:nth-child(1) {
+            background-color: #f9f9f9;
+        }
+
+
+        th {
+            height: 40px;
+            line-height: 40px;
+            border: none;
+        }
+
+        td {
+            padding: 0;
+            height: 40px;
+            line-height: 24px;
+            text-align: left;
+            padding: 5px 10px;
+        }
+
+        td {
+            width: 20%;
+            border: 1px solid #f2f2f2;
+
+            // &:nth-child(2) {
+            //     width: 40%;
+            // }
+        }
+    }
+    .fill{
+        padding: 0 10px;
+        border-bottom: 1px solid #666;
+    }
+    .center {
+        text-align: center;
+    }
+}
+
+
+@media print {
+    h1 {
+        line-height: 40px;
+        font-size: 16px;
+        color: #333;
+        font-weight: 700;
+        margin: 25px 0 15px;
+      }
+    
+      h2 {
+        line-height: 30px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+    p {
+        line-height: 21px;
+        color: #666;
+        font-size: 14px;
+        margin: 5px 0;
+        word-break: break-all;
+        text-align: justify;
+      }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 12px;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+
+        tbody tr:nth-child(1) {
+            background-color: #f9f9f9;
+        }
+
+
+        th {
+            height: 40px;
+            line-height: 40px;
+            border: none;
+        }
+
+        td {
+            padding: 0;
+            height: 40px;
+            line-height: 24px;
+            text-align: left;
+            padding: 5px 10px;
+        }
+
+        td {
+            width: 20%;
+            border: 1px solid #f2f2f2;
+        }
+    }
+
+    label {
+        cursor: default;
+    }
+    .union_code {
+        display: inline-block;
+        margin-left: 6em;
+    }
+}

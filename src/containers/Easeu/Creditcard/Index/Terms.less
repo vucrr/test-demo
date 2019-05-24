@@ -1,0 +1,43 @@
+.terms_box {
+    position: fixed;
+    background-color: #f2f2f2;
+    z-index: 990;
+    width: 100%;
+    left: -100vw;
+    top: 45px;
+    bottom: 0;
+    transition: left .3s ease;
+
+    &.active {
+        left: 0;
+    }
+
+    :global {
+        .service-container {
+            height: calc(100vh - 32px);
+            overflow: auto;
+            padding: 16px 15px;
+            background-color: #fff;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+            line-height: 24px;
+            color: #666;
+
+            span {
+                color: #222;
+                font-weight: bold;
+            }
+        }
+
+        .title {
+            color: #222;
+            font-weight: bold;
+        }
+
+        .level-b {
+            margin-left: 10px;
+        }
+    }
+}

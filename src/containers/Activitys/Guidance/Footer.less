@@ -1,0 +1,35 @@
+@keyframes upleft
+{
+    0%   {width: 90%;}
+    9%  {width: 100%; }
+    // 11%  {width: 105%; }
+    18%   {width: 90%;}
+    25%  {width: 100%; }
+    // 85%  {transform: translate3d(-3%, 0, 0);}
+    to {width: 100%; }
+}
+
+#footer{
+    margin-bottom: 1.76rem;
+    font-size:.24rem;
+    font-family:HiraginoSansGB-W3;
+    color:rgba(153,77,68,1);
+    text-align: center;
+    a {
+        color: #E34039;
+        text-decoration:underline;
+    }
+    .button {
+        font-size: 0;
+        position: fixed;
+        width: 6.3rem;
+        left: .6rem;
+        right: .6rem;
+        bottom: 0;
+        z-index: 100;
+        >img {
+            width: 100%;
+            animation: upleft 4s linear  infinite;
+        }
+    }
+}

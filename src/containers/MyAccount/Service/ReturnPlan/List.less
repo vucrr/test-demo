@@ -1,0 +1,139 @@
+
+.list {
+    padding: 0 15px 30px;
+
+    .historyList {
+        padding: 12px 0;
+        background-color: #f8f8f8;
+
+        h4 {
+            padding-left: 15px;
+        }
+    }
+
+    .detailBox {
+        background: #F8F8F8;
+        border-radius: 4px;
+        padding: 0 15px;
+    }
+
+    h4 {
+        font-size: 14px;
+        color: #333333;
+        line-height: 16px;
+        margin: 12px 0;
+        font-weight: normal;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    :global {
+        .am-accordion {
+            border-top: none;
+
+            &:before {
+                height: 0 !important;
+            }
+
+            .am-accordion-item {
+                .am-accordion-header {
+                    background-color: #f8f8f8;
+                    border: none;
+                    font-weight: normal;
+                    overflow: visible;
+                    text-overflow: clip;
+                    white-space: normal;
+                    height: auto;
+                    line-height: 21px;
+                    padding: 12px 55px 11px 15px;
+
+                    i {
+                        width: 10px;
+                        height: 10px;
+                    }
+
+                    &::after {
+                        width: auto !important;
+                        left: 15px !important;
+                        right: 15px !important;
+                        background-color: #eee !important;
+                    }
+                }
+
+                .am-accordion-content-box:after {
+                    height: 0 !important;
+                }
+            }
+
+        }
+    }
+}
+
+.detail {
+    background: #F8F8F8;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &.return_list {
+        border-bottom: 1px solid #eee;
+    }
+
+    span {
+        background: #FFFFFF;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 2px 4px;
+        color: #AAAAAA;
+        margin-right: 8px;
+    }
+
+    p {
+        font-size: 12px;
+        color: #AAAAAA;
+        line-height: 12px;
+    }
+
+    .price {
+        font-size: 14px;
+        color: #333333;
+        line-height: 14px;
+        margin-bottom: 8px;
+    }
+
+    .plan_status {
+        flex-shrink: 0;
+        text-align: right;
+        min-width: 85px;
+        flex-grow: 0;
+
+        .state {
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 8px;
+        }
+
+        .owe {
+            color: #FE5649;
+        }
+
+        .pay {
+            color: #FF5544;
+            line-height: 24px;
+            width: 72px;
+            text-align: center;
+            background: rgba(255, 85, 68, 0.00);
+            border: 1px solid #FF5544;
+            border-radius: 4px;
+            float: right;
+        }
+    }
+}

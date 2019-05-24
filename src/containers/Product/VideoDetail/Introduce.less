@@ -1,0 +1,68 @@
+@import '../../../themes/vars.less';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.introduce_box {
+  padding: 8px 15px 24px;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  .title {
+    width: 266px;
+    max-height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    font-size: 18px;
+    line-height: 24px;
+    overflow: hidden;
+    font-weight: 500;
+  }
+  .times {
+    margin: 8px 0 15px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+  }
+  .content {
+    width: 100%;
+    max-height: 42px;
+    overflow: hidden;
+    line-height: 21px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, .9);
+    &.show {
+      max-height: 100vh;
+      text-align: justify;
+    }
+  }
+  .contentInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 21px;
+    font-size: 14px;
+    visibility: hidden;
+  }
+  .btn_toggle {
+    float: right;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 14px;
+    color: #00A699;
+    &.show {
+      .icon_arrow{
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .icon_arrow {
+    width: 14px;
+    margin-left: 4px;
+    color: #b0b0b0;
+    transform: rotate(-90deg);
+  }
+}

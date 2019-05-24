@@ -1,0 +1,103 @@
+@import '../../../themes/mixin.less';
+.discount {
+    background: #F8F8F8;
+    border-radius: 4px;
+    div {
+        height: 48px;
+        border-bottom: 1px solid #EEEEEE;
+        // &:last-of-type {
+        //     border-bottom: none;
+        // }
+    }
+    span {
+        border: 1px solid @primary-color;
+        text-align: center;
+        border-radius: 2px;
+        color: @primary-color;
+        font-size: 12px;
+        min-width: 30px;
+        line-height: 16px;
+        vertical-align: top;
+        margin: 0 12px 0 18px;
+    }
+    p {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 18px;
+        color: #333333;
+        width: 245px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .icon {
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+    }
+}
+
+.popup_modal_box {
+    .header {
+        // padding: 16px;
+        line-height: 48px;
+        text-align: center;
+        border-bottom: 1px solid #E8E8E8;
+        color: #333;
+        font-size: 16px;
+        position: relative;
+        .btn_close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            color: #BBB;
+        }
+    }
+
+    .body {
+        padding: 16px 15px;
+        height: 286px;
+        overflow-y: scroll;
+        >div {
+            height: 100px;
+            background: #F8F8F8;
+            border-radius: 4px;
+            padding: 0 18px;
+            margin-bottom: 10px;
+            p {
+                margin-top: 8px;
+                font-size: 13px;
+                color: #999999;
+                line-height: 13px;
+            }
+        }
+        a {
+            background: rgba(255,255,255,0.00);
+            border: 1px solid #FE5649;
+            border-radius: 24px;
+            width: 64px;
+            height: 22px;
+            font-size: 12px;
+            color: #FE5649;
+            text-align: center;
+            font-weight: normal;
+        } 
+        img {
+            height: 64px;
+            width: 64px;
+        }
+        h4 {
+            font-size: 16px;
+            color: #333333;
+            line-height: 26px;
+            font-weight: normal;
+        }
+        h5 {
+            font-size: 13px;
+            color: #999999;
+            line-height: 18px;
+            font-weight: normal;
+        }
+        
+    }
+}

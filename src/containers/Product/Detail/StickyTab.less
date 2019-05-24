@@ -1,0 +1,51 @@
+:global {
+    #stickyContainer > div{
+        &:first-of-type > div {
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+.sticky_tab {
+    position: fixed;
+    top: 0;
+    left: 85px !important;
+    right: 85px;
+    width: auto !important;
+    height: 45px;
+    transition: opacity ease 0.1s;
+    opacity: 0;
+    z-index: -1;
+
+    :global {
+        .am-tabs-tab-bar-wrap {
+            .am-tabs-default-bar-tab {
+                font-size: 14px !important;
+                height: 45px;
+                &:after{
+                    background-color: #fff !important;
+                }
+            }
+
+            .am-tabs-default-bar-tab-active {
+                font-weight: bold !important;
+            }
+
+            .am-tabs-default-bar-underline {
+                width: 16px !important;
+                margin-left: 13%;
+                border-radius: 1px;
+            }
+        }
+    }
+
+    &.active {
+        top: 0 !important; // 45px
+        opacity: 1;
+        z-index: 999;
+    }
+
+    &.app {
+        top: 0px !important;
+    }
+}

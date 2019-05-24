@@ -1,0 +1,99 @@
+
+.Steps {
+    background-color: #F8F8F8;
+    padding: 24px 15px;
+    // margin-bottom: 117px;
+    .phase{
+        &:last-of-type{
+            .process_detail {
+                padding-bottom: 0;
+            }
+            .progress{
+                &::before{
+                    width: 0;
+                }
+                
+            }
+        }
+        .progress {
+            width: 14px;
+            margin-right: 13px;
+            position: relative;
+            font-size: 0;
+            line-height: 0;
+            flex-shrink: 0;
+            .icon {
+                width: 14px;
+                height: 14px;
+                z-index: 3;
+            }
+            &:before {
+                display: block;
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: #f8f8f8;
+                position: absolute;
+                left: 6px;
+            }
+        }
+        .process_detail {
+            width: 318px;
+            padding-bottom: 16px;
+            
+            h4 {
+                font-size: 16px;
+                color: #333333;
+                line-height: 1;
+                margin-bottom: 12px;
+                font-weight: normal;
+            }
+            h5 {
+                font-size: 13px;
+                color: #666666;
+                line-height: 20px;
+                margin-bottom: 8px;
+                font-weight: normal;
+            }
+            .pro_date {
+                font-size: 13px;
+                color: #999999;
+                line-height: 13px;
+                margin-bottom: 8px;
+            }
+            .pro_eva {
+                color: #999999;
+            }
+            .pro_copy {
+                background: #F8F8F8;
+                border-radius: 4px;
+                padding: 16px 15px;
+                margin-bottom: 8px;
+                p {
+                    font-size: 13px;
+                    color: #333333;
+                    line-height: 20px;
+                    .copy_ok {
+                        background: #FFFFFF;
+                        margin-left: 10px;
+                        border: 0.5px solid #DDDDDD;
+                        border-radius: 2px;
+                        font-size: 12px;
+                        padding: 3px 8px;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+        .done {
+            h4 {
+                color: #999999;
+            }
+            h5 {
+                color: #999999;
+            }
+        }
+    }
+    
+    
+}

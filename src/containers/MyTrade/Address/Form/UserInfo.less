@@ -1,0 +1,70 @@
+@import "../../../../themes/mixin";
+.infor {
+    background: #fff;
+    padding-left: 15px;
+    // line-height: 48px;
+    .inforItem {
+        font-size: 14px;
+        min-height: 48px;
+        color: #222222;
+        padding-right: 15px;
+        border-bottom: 1px solid #EEEEEE;
+        &:last-of-type{
+            border-bottom: none;
+        }
+        input{
+            // line-height: 30px;
+            width: 100%;
+            .placeholderColor(#ccc);
+            background-color: #fff;
+            border: 0;
+            &:disabled{
+                color: #999
+            }
+        }
+        :global {
+            .am-list-item {
+               padding-left: 0 !important; 
+            }
+        }
+        .infor_name {
+            width: 80px;
+        }
+        .item2 {
+            padding: 12px 0;
+            line-height: 21px;
+            p{
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;  
+            }
+            .gray {
+                color: #666;
+            }
+        }
+        .noChange {
+            color: #999999;
+            overflow: hidden;
+            white-space:nowrap; 
+            text-overflow:ellipsis;
+        }
+        .infor_input {
+            width: 265px;
+            .icon_right {
+                width: 16px;
+                height: 16px !important;
+                .icon {
+                    width: 100%;
+                }
+            }
+            .disable {
+                color: #999;
+            }
+        }
+        
+    }
+}
+
+.btn_submit {
+    margin: 32px 38px 0;
+}

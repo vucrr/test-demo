@@ -1,0 +1,145 @@
+@import "../../../themes/mixin.less";
+
+.tab_content {
+    background-color: #fff;
+    min-height: calc(100vh - 45px - 213px);
+
+    .tab_item {
+        display: none;
+        &.active {
+            display: block;
+        }
+
+        .empty {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            // height: calc(100vh - 45px - 213px);
+            text-align: center;
+            font-size: 14px;
+            color: @xhj-gray-light;
+            padding-top: 3rem;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                color: #eee;
+                margin-bottom: 0.3rem;
+                margin-top: -2rem;
+            }
+
+            .btn {
+                width: 96px;
+                height: 32px;
+                line-height: 32px;
+                background-color: @primary-color;
+                color: #fff;
+                display: inline-block;
+                margin-top: 15px;
+                border-radius: 0.04rem;
+            }
+            .emt{
+                width: 96px;
+                height: 32px;
+                margin-top: 15px;
+            }
+        }
+        .performshow{
+            ul{
+                li{
+                    font-size: .28rem;
+                    margin-left: .3rem;
+                    height:1.12rem;
+                    border-bottom: 1px #EEE solid;
+                    line-height: 1.12rem;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        display: inline-block;
+                        font-size: .26rem;
+                        color:#999;
+                        padding-left: .22rem;
+                    }
+                    :global{
+                        .am-icon-huankuan {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #FF8D2F;
+                            margin-right: 0.24rem;
+                            }
+        
+                   
+                        .am-icon-huanji {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #7EA0FF;
+                            margin-right: .24rem;
+                            }
+                        .am-icon-maiduan {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #24CB92;
+                            margin-right: .24rem;
+                            }
+                    }
+                        
+                }
+            }
+        }
+        .violationshow{
+            ul{
+                li{
+                    font-size: .28rem;
+                    margin-left: .3rem;
+                    height:1.12rem;
+                    border-bottom: 1px #EEE solid;
+                    line-height: 1.12rem;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        width:7rem;
+                        height: 1.12rem;
+                        text-decoration:none;
+                        color: #000;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: .26rem;
+                        color:#999;
+                        padding-left: .22rem;
+                        flex: 1;
+                    }
+                    :global{
+                        .am-icon-huankuan {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #FF8D2F;
+                            margin-right: .24rem;
+                        }
+        
+                   
+                        .am-icon-huanji {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #7EA0FF;
+                            margin-right: .24rem;
+                        }
+                        .am-icon-maiduan {
+                            width: .4rem;
+                            height:.4rem;
+                            color: #24CB92;
+                            margin-right: .24rem;
+                        }
+                        .am-icon-arrow-right{
+                            width: .2rem;
+                            height:.2rem;
+                            color: #B0B0B0;
+                            vertical-align: middle;
+                            // margin-right: .24rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "../../../themes/mixin";
+
+.container {
+    overflow-x: hidden;
+    height: calc(100vh - 45px);
+    box-sizing: border-box;
+    background-color: white;
+
+    .inner {
+        display: flex;
+        width: 200vw;
+
+        &.show {
+            transform: translateX(-100vw);
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+.firstForm {
+    width: 100vw;
+    padding: 32px 15px;
+
+    .title {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .phone {
+        font-size: 26px;
+        color: #333;
+        margin-bottom: 24px;
+    }
+
+    .tip {
+        font-size: 12px;
+        line-height: 18px;
+        color: #919191;
+        margin-bottom: 40px;
+    }
+}
+
+.secondForm {
+    width: 100vw;
+    padding: 32px 15px;
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 12px;
+    }
+
+    .inputWrapper {
+        margin: 20px 0 24px;
+        position: relative;
+
+        .verify {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .dialog {
+            margin-left: 100vw;
+            width: 100vw;
+            height: calc(100vh - 45px);
+        }
+
+        .input {
+            flex: 1;
+            height: 44px;
+            background: #F8F8F8;
+            border: 1px solid #F2F2F2;
+            border-radius: 4px;
+
+            :global {
+                .am-list-line:after {
+                    content: none !important;
+                }
+
+                .am-input-control {
+                    input {
+                        font-size: 14px;
+                    }
+                }
+
+                .am-list-line {
+                    min-height: 44px;
+                }
+            }
+        }
+    }
+}

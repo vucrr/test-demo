@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint-react", "tslint-react-hooks", "./tslint.server.json"],
+  "rules": {
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "jsx-wrap-multiline": false,
+    "react-hooks-nesting": "error"
+  }
+}

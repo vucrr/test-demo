@@ -1,0 +1,69 @@
+@import '../../../themes/mixin.less';
+
+.pro_info {
+    line-height: 1;
+    padding: 16px 15px 0;
+
+    h4 {
+        line-height: 24px;
+        margin-bottom: 8px;
+        font-family: PingFangSC-Semibold;
+        font-weight: normal;
+        .ellipsis();
+    }
+
+    .sub_title {
+        font-size: 12px;
+        color: #999999;
+        .ellipsis();
+    }
+
+    .line_price {
+        font-size: 12px;
+        line-height: 1;
+        color: #AAAAAA;
+        margin-bottom: 12px;
+        text-decoration: line-through;
+    }
+}
+
+.price_info {
+    margin-bottom: 8px;
+    .left {
+        color: @primary-color;
+        font-size: 24px;
+
+        span:not(:last-of-type) {
+            font-family: PingFangSC-Semibold;
+        }
+
+        .cn {
+            font-size: 16px;
+        }
+
+        .union {
+            font-size: 14px;
+        }
+
+        .icon {
+            display: inline-block;
+            text-decoration: none;
+            padding: 1px 4px;
+            font-size: 10px;
+            line-height: 1;
+            background-color: rgba(255, 85, 68, 0.11);
+            color: @primary-color;
+            border-radius: 2px;
+            margin-left: 4px;
+        }
+    }
+
+    .right {
+        font-size: 12px;
+        color: #999999;
+
+        span {
+            margin-left: 8px;
+        }
+    }
+}

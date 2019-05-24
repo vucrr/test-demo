@@ -1,0 +1,133 @@
+@import '../../themes/mixin.less';
+
+.container {
+    position: relative;
+    padding: 24px 0 0;
+
+    .title_box {
+        margin-bottom: 12px;
+        padding: 0 12px;
+        overflow: visible;
+
+        h1 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #999;
+
+            span {
+                font-size: 15px;
+                color: #333;
+            }
+        }
+    }
+
+    .swiper {
+        padding: 0 12px;
+
+        .item {
+            background: #F6F7F9;
+            border-radius: 4px;
+            padding: 9px 12px;
+        }
+
+        .thumb {
+            width: 128px;
+            height: 128px;
+            margin-right: 22px;
+            position: relative;
+            overflow: visible !important;
+
+            p {
+                padding: 3px 6px;
+                text-align: center;
+                border-radius: 4px 10px 10px 10px;
+                background-image: linear-gradient(-134deg, #FA7676 0%, #FB4040 100%);
+                font-size: 13px;
+                color: #FFFFFF;
+                position: absolute;
+                left: -4px;
+                top: 0;
+            }
+        }
+
+        .right {
+            margin-left: 0;
+            h4 {
+                font-size: 18px;
+                color: #323232;
+                margin-bottom: 10px;
+                font-weight: 500;
+                .ellipsis();
+            }
+
+            .price {
+                font-size: 20px;
+                color: #FF4B2D;
+                margin-bottom: 16px;
+                font-weight: bold;
+                line-height: 1;
+
+                .cur_price {
+                    line-height: 20px;
+                }
+
+                .union {
+                    font-size: 16px;
+                }
+
+                .per {
+                    font-size: 12px;
+                }
+
+                .line {
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #CCCCCC;
+                    margin-left: 8px;
+                    text-decoration: line-through;
+                }
+
+            }
+        }
+
+        .extra_box {
+            display: inline-flex;
+            background: rgba(255,255,255,0.00);
+            border: 1px solid #9699AE;
+            border-radius: 4px;
+
+            .left {
+                background-color: #9699AE;
+                width: 41px;
+                align-self: stretch;
+                align-items: center;
+                color: #fff;
+                font-size: 24px;
+            }
+
+            .right {
+                font-size: 12px;
+                color: #333333;
+                margin-left: 0;
+
+                p {
+                    padding: 5px 8px;
+
+                    &:first-child {
+                        border-bottom: 1px solid #9699AE;
+                    }
+                }
+
+                p:nth-last-child(1):first-child {
+                    padding: 10px 8px;
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}

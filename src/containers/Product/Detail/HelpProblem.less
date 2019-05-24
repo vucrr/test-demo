@@ -1,0 +1,73 @@
+.help_problem {
+    padding: 20px 15px 0;
+}
+
+.accordion_box {
+    background: #F8F8F8;
+    border-radius: 4px;
+
+    .text {
+        font-size: 13px;
+        color: #666666;
+        line-height: 21px;
+        padding: 0 15px 16px;
+    }
+
+    &::before {
+        background-color: #fff !important;
+    }
+
+    :global {
+        .am-accordion-header, .am-accordion-content {
+            background-color: inherit !important;
+        }
+
+        .am-accordion-header {
+            height: 48px !important;
+            line-height: 48px !important;
+            font-weight: normal !important;
+
+            .arrow {
+                width: 12px !important;
+                height: 12px !important;
+                top: 18px !important;
+            }
+
+            &::after {
+                left: 15px !important;
+                right: 15px !important;
+                width: auto !important;
+                background-color: #eee !important;
+            }
+        }
+
+        .am-accordion-content-box {
+            &::after {
+                background-color: #eee !important;
+            }
+        }
+
+        .am-accordion-item-active {
+            .am-accordion-header {
+                &::after {
+                    background-color: #F8F8F8 !important;
+                }
+            }
+
+            .am-accordion-content-box {
+                &::after {
+                    left: 15px !important;
+                    right: 15px !important;
+                    width: auto !important;
+                    background-color: #eee !important;
+                }
+            }
+        }
+
+        .am-accordion-item {
+            &:last-child .am-accordion-header::after, &:last-child .am-accordion-content-box::after {
+                background-color: #F8F8F8 !important;
+            }
+        }
+    }
+}

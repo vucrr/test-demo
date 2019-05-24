@@ -1,0 +1,40 @@
+@import '../../../../themes/vars.less';
+.box {
+    .tips {
+        padding: 24px 15px 12px;
+        font-size: 14px;
+        color: #999;
+    }
+    :global .am-list-content {
+        display: flex;
+        align-items: center;
+    }
+    .listItem {
+        height: 56px;
+    }
+    .fail {
+        :global .am-list-extra {
+            color: @primary-color;
+        }
+    }
+    .success {
+        :global .am-list-extra {
+            color: #333;
+        }
+        :global .am-icon-right {
+            vertical-align: middle;
+            margin-right: 8px;
+            color: #54AC69;
+        }
+    }
+    .icon {
+        margin-right: 10px;
+        color: #999;
+    }
+    .btn {
+        width: 300px;
+        height: 44px;
+        margin: 32px auto 0;
+        border-radius: 2px;
+    }
+}

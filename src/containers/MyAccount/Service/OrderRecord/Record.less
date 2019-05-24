@@ -1,0 +1,82 @@
+@import '../../../../themes/vars.less';
+.recordBox {
+    padding: 24px 0;
+    .titleBox {
+        font-family: PingFangSC-Medium;
+        margin-bottom: 16px;
+        .num {
+            color: #666;
+        }
+    }
+    .itemBox {
+        width: 100%;
+        padding: 16px 15px;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        .thumb {
+            width: 64px;
+            height: 64px;
+            padding: 4px;
+            background-color: #fff;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        } 
+        .name {
+            flex: 1;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 15px;
+        } 
+        .grey {
+            opacity: .5;
+        }  
+    }
+    .bgGrey {
+        background-color: #f8f8f8;
+    }
+    .listBox {
+
+        .itemBox {
+            flex-direction: column;
+        }
+        .thumb {
+            width: 82px;
+            height: 82px;
+            padding: 4px;
+            background-color: #fff;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        } 
+        .name {
+            margin-top: 12px;
+            margin-left: 0;
+            width: 132px;
+        }
+    }
+    .lottie_icon {
+        position: relative;
+        top: -20px;
+    }
+    :global {
+        .am-carousel-wrap {
+            font-size: 6px;
+        }
+        .am-carousel-wrap-dot>span {
+            width: 6px;
+            height: 6px;
+        }
+        .am-carousel-wrap-dot-active>span {
+            background-color: @primary-color;
+        }
+    }
+}

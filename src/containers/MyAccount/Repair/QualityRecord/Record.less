@@ -1,0 +1,63 @@
+.record {
+    margin-top: 10px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-bottom: 16px;
+    .record_title {
+        line-height: 48px;
+        font-size: 13px;
+        color: #333333;
+        padding-right: 15px;
+        border-bottom: 1px solid #eee;
+        .record_state {
+            color: #FF5544;
+            .icon{
+                width: 10px;
+                height: 10px;
+                color: #ccc;
+                margin-left: 8px;
+            }
+        }
+    }
+    .record_detail {
+        padding: 12px 14px 0 0;
+        font-size: 13px;
+        color: #333333;
+        line-height: 21px;
+        .quer {
+            margin-top: 5px;
+        }
+        .record_topic {
+            min-width: 66px;
+            margin-right: 5px;
+        }
+    }
+    .copy_ok {
+        border: 1px solid #DDDDDD;
+        border-radius: 2px;
+        font-size: 12px;
+        color: #999999;
+        line-height: 12px;
+        padding: 0 8px;
+        margin-left: 8px;
+    }
+}
+.recordList {
+    background-color: #f2f2f2;
+    :global{
+        .am-list-body {
+            background-color: #f2f2f2;
+        }
+    }
+}
+.done {
+    .record_title {
+        color: #999999;
+        .record_state {
+            color: #999999;
+        }
+    }
+    .record_detail {
+        color: #999999;
+    }
+}

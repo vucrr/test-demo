@@ -1,0 +1,31 @@
+.tabbar_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 45px;
+    transition: height .3s ease-in-out;
+    // border-bottom: 1px solid #eee;
+    background-color: #fff;
+    z-index: 997;
+    height: 0;
+
+    &.show {
+        height: 50px;
+    }
+
+    &.fixed {
+        top: auto;
+        bottom: 0;
+        padding-bottom: env(safe-area-inset-bottom);
+
+        &.show {
+            height: calc(50px + env(safe-area-inset-bottom));
+        }
+    }
+
+    :global {
+        .am-tab-bar-tab-title {
+            font-size: 12px;
+        }
+    }
+}

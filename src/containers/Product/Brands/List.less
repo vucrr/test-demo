@@ -1,0 +1,74 @@
+.container {
+    background-color: white;
+}
+
+.tab_box {
+    z-index: 991;
+    top: 45px !important;
+
+    :global {
+        .am-tabs-default-bar {
+            padding-left: 3px;
+        }
+        .am-tabs-default-bar-tab {
+            font-size: 13px;
+            color: #666;
+            transition: font-size .1s ease-in-out;
+        }
+
+        .am-tabs-default-bar-tab-active {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .am-tabs-default-bar-underline {
+            width: 16% !important;
+            margin-left: 2.5%; 
+        }
+
+        .am-tabs-default-bar-tab {
+            // 1个tab样式
+            &:first-child:nth-last-child(2) ~ .am-tabs-default-bar-underline {
+                margin-left: 42%;
+            }
+            // 2个tab样式
+            &:first-child:nth-last-child(3) ~ .am-tabs-default-bar-underline {
+                margin-left: 17%;
+            }
+            // 3个tab样式
+            &:first-child:nth-last-child(4) ~ .am-tabs-default-bar-underline {
+                margin-left: 8.5%;
+            }
+            // 4个tab样式
+            &:first-child:nth-last-child(5) ~ .am-tabs-default-bar-underline {
+                margin-left: 4.5%;
+            }
+        }
+    }
+}
+
+.product_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 313px);
+
+    &.hide_tab {
+        min-height: calc(100vh - 268px);
+    }
+
+    .list {
+        flex: 1;
+        padding: 0 12px;
+    }
+
+    .footer {
+        align-self: stretch;
+        background: #F6F7F9;
+        padding: 30px 15px;
+        text-align: center;
+        font-size: 12px;
+        color: #CCCCCC;
+    }
+}

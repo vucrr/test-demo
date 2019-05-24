@@ -1,0 +1,25 @@
+@import "../../themes/mixin.less";
+
+.content_box {
+    min-height: 100vh;
+}
+
+.content {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+
+    &.hide_header {
+        padding-top: 0;
+    }
+
+    &.with_tabbar {
+        padding-bottom: calc(50px + env(safe-area-inset-bottom));
+    }
+}
+
+:global {
+    .detail-content {
+        margin-bottom: 50px;
+    }
+}

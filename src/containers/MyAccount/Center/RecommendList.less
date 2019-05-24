@@ -1,0 +1,62 @@
+.pro_box {
+    .title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .pro_list {
+        // touch-action: pan-y pinch-zoom; // 处理 JavaScript 中的水平滚动，而 不停用垂直滚动或双指张合缩放（例如图像轮播）
+        :global {
+            .am-list-item {
+                flex-basis: 33.33%;
+                padding-left: 0;
+
+                &:nth-child(3) {
+                    .am-list-line {
+                        padding-right: 0 !important;
+                    }
+                }
+            }
+            .slider-decorator-0 {
+                position: relative !important;
+            }
+            .am-list-content {
+                padding-top: 0 !important;
+            }
+
+            .am-list-line {
+                padding-right: 0.15rem !important;
+                border-bottom: none !important;
+                &::after {
+                    background-color: #fff !important;
+                }
+            }
+
+            a {
+                border-radius: 4px;
+            }
+        }
+
+        .item {
+            width: 30%;
+            img {
+                width: 95px;
+                height: auto;
+                margin: .2rem .2rem 0;
+                background-color: #f2f2f2;
+            }
+            div{
+                height: auto !important;
+                > span {
+                    display: block;
+                    font-size: 13px;
+                    line-height: 13px;
+                    color: #333;
+                    margin-bottom: 0.12rem;
+                    padding: 0 .2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../../themes/mixin.less';
+
+.address_box {
+    padding: 14px 0;
+    background-color: #fff;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background: url('images/trade/address-bottom.png') center center repeat-x;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .empty_box {
+        .label {
+            display: block;
+            font-size: 16px;
+            color: @xhj-gray-dark;
+            padding: 14px 0;
+        }
+    }
+
+    .icon_edit {
+        width: 16px;
+        height: 16px;
+    }
+
+    .name {
+        font-size: 16px;
+        color: #222;
+        display: block;
+        line-height: 1;
+    }
+    :global {
+        .am-list-body {
+            border-color: #fff;
+            &::before, &::after {
+                background-color: #fff !important;
+            }
+        }
+        .am-list-extra {
+            flex-basis: 10% !important;
+        }
+
+        .am-list-brief {
+            font-size: 14px !important;
+            color: @xhj-gray-light !important;
+            overflow: initial !important;
+            text-overflow: initial !important;
+            white-space: initial !important;
+            line-height: 1.35 !important;
+        }
+    }
+}

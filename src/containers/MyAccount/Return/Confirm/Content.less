@@ -1,0 +1,59 @@
+@import "../../../../themes/mixin";
+
+.top_box {
+    background-color: #fff;
+    padding: 24px 50px;
+    text-align: center;
+
+    h3 {
+        font-weight: normal;
+        font-size: 18px;
+        color: #222;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #666;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        font-size: 16px;
+        color: #333333;
+        text-align: center;
+        line-height: 14px;
+    }
+
+    .price {
+        color: @easeu-color;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.button_box {
+    display: flex;
+    padding: 24px 15px;
+    .button {
+        flex: 1;
+
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+}
+
+.bottom_box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 32px;
+    text-align: center;
+    font-size: 14px;
+    .tel {
+        color: @easeu-color;
+    }
+}

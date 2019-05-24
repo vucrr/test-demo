@@ -1,0 +1,43 @@
+// Beta Test
+
+GET http://m.beta.xianghuanji.com/next-api/index HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Content-Type: application/json
+Accept: application/json
+Accept-Encoding: utf-8
+
+###
+
+GET http://m.beta.xianghuanji.com/next-api/product/category HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+###
+
+// Dev Test
+
+POST http://test9.mm.t.xianghuanji.com/userOauth/saveRedirectUrl HTTP/1.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+Cookie: popupId=8; _pk_ses.1.1fff=*; _pk_id.1.1fff=f96d9c9a68f39a91.1529917897.6.1530015821.1530014414.
+Accept: application/json
+
+{
+    redirect_url: ''
+}
+
+###
+
+GET http://test16.bfa.t.xianghuanji.com/getUserPrivileges HTTP/1.1
+Host: test16.bfa.t.xianghuanji.com
+userToken: TcRNaQizSrhwjPwdjcv/Ug==
+userIdV2: qo0tksUKYo8=
+
+###
+GET /trade/getTradeDetailsQsy?flow_code=20180807212128563546 HTTP/1.1
+Host: test12.bfa.t.xianghuanji.com
+userToken: 91rJypTJifRsO1ISerRiZA==
+channelId: 41
+
+###

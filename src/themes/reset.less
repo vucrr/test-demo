@@ -1,0 +1,169 @@
+:global {
+  html {
+      font-size: 13.333335vw;
+  }
+
+  body {
+      background-color: #f2f2f2 !important;
+      font-size: 16px;
+      font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB W3", Helvetica, "Heiti SC", "Droid Sans", "Droidsansfallback", sans-serif;
+      // max-width: 750px;
+      // margin: 0 auto;
+  }
+
+  body,
+  blockquote,
+  button,
+  dl,
+  dd,
+  fieldset,
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  input,
+  ul,
+  ol,
+  p,
+  pre,
+  select,
+  textarea {
+      margin: 0;
+  }
+
+  button,
+  th,
+  td,
+  fieldset,
+  legend,
+  input,
+  ul,
+  ol,
+  select,
+  textarea {
+      padding: 0;
+  }
+
+  .flex-box {
+      display: flex;
+  }
+
+  .flex-item {
+      flex: 1;
+  }
+
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .am-accordion-header {
+      font-size: 14px !important;
+      font-weight: bold;
+  }
+
+  .am-grid-item-content {
+      height: auto !important;
+  }
+
+  .am-list-header {
+      color: @xhj-gray-light !important;
+  }
+
+  .am-list-body {
+      &::before, &::after {
+          background-color: #fff !important;
+      }
+  }
+
+  .ellipsis {
+      .ellipsis();
+  }
+
+  .ellipsis2 {
+      .ellipsis-flex();
+  }
+
+  .am-list-item {
+      &.am-input-item {
+          height: 48px;
+      }
+
+      .am-input-clear {
+          width: 14px;
+          height: 14px;
+          background-size: 12px auto;
+      }
+
+      .am-input-label {
+          font-size: 14px;
+          color: #222;
+      }
+
+      .am-input-control, .am-textarea-control {
+          input, textarea {
+              font-size: 14px;
+              color: #333;
+
+              &:read-only {
+                  color: #ccc;
+              }
+          }
+
+          input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+              color: #ccc;
+          }
+
+          input:-moz-placeholder, textarea:-moz-placeholder {
+              color: #ccc;
+          }
+
+          input::-moz-placeholder, textarea::-moz-placeholder {
+              color: #ccc;
+          }
+
+          input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+              color: #ccc;
+          }
+      }
+
+      .am-list-line {
+          min-height: 48px;
+
+          .am-list-content, .am-list-extra {
+              font-size: 14px;
+              color: #333;
+          }
+
+          .am-list-brief {
+              display: inline-flex;
+              margin-left: 5px;
+              font-size: 14px;
+              color: #999;
+          }
+
+          &:after {
+              background-color: #eee !important;
+              right: 15px !important;
+              width: auto !important;
+          }
+      }
+  }
+
+  .am-notice-bar {
+      background-color: #FFF1B0;
+      color: #CB9A04;
+      font-size: 13px;
+      height: 32px;
+      line-height: 32px !important;
+  }
+
+  .am-toast-mask {
+      transform: translateZ(0.02rem);
+  }
+}

@@ -1,0 +1,77 @@
+.tabs_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    :global {
+        .am-tabs-default-bar {
+            padding-left: 3px;
+        }
+
+        .am-tabs-default-bar-tab {
+            font-size: 13px;
+            color: #666;
+            transition: font-size .1s ease-in-out;
+        }
+
+        .am-tabs-default-bar-tab-active {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .am-tabs-default-bar-underline {
+            width: 16% !important;
+            margin-left: 2.5%; 
+        }
+
+        .am-tabs-default-bar-tab {
+            // 1个tab样式
+            &:first-child:nth-last-child(2) ~ .am-tabs-default-bar-underline {
+                margin-left: 42%;
+            }
+            // 2个tab样式
+            &:first-child:nth-last-child(3) ~ .am-tabs-default-bar-underline {
+                margin-left: 17%;
+            }
+            // 3个tab样式
+            &:first-child:nth-last-child(4) ~ .am-tabs-default-bar-underline {
+                margin-left: 8.5%;
+            }
+            // 4个tab样式
+            &:first-child:nth-last-child(5) ~ .am-tabs-default-bar-underline {
+                margin-left: 4.5%;
+            }
+        }
+    }
+}
+
+.title_box {
+    background-color: #fff;
+    line-height: 1;
+    padding: 15px 12px 9px;
+    .title {
+        position: relative;
+        display: inline-flex;
+        font-size: 24px;
+        padding-right: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 1px;
+            height: 16px;
+            background-color: #ddd;
+        }
+    }
+
+    .sub_title {
+        font-size: 13px;
+        padding-left: 10px;
+        color: #666;
+    }
+}

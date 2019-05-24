@@ -1,0 +1,95 @@
+@import "../../themes/mixin";
+
+.btn {
+  &:global.am-button {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    overflow: visible;
+  }
+  &:global.am-button-primary {
+    height: 40px;
+    line-height: 40px;
+    background-color: @primary-color;
+    border: 1px solid @primary-color;
+
+    span {
+      font-size: 16px;
+    }
+
+    &:before {
+      border: none !important;
+    }
+
+    &.am-button-active {
+      background-color: @primary-color;
+    }
+
+    &.am-button-disabled {
+      color: #fff;
+      background-color: #FFBBB4;
+      border: 1px solid #FFBBB4;
+      opacity: 1;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  // ghost styles
+  &:global.am-button-ghost {
+    &:before {
+      border-color: @primary-color !important;
+    }
+    span {
+      color: @primary-color;
+    }
+  }
+
+  &:global.am-button-small {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 21px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  &.fixed {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+  }
+
+  &.safe_area {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+    margin-bottom: env(safe-area-inset-bottom);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+      height: env(safe-area-inset-bottom);
+      background-color: #FFFFFF;
+      z-index: 998;
+    }
+  }
+}
+
+:global {
+  .easeu {
+    .am-button-primary {
+      background-color: @easeu-color;
+      border-color: @easeu-color;
+
+      &.am-button-active {
+        background-color: @easeu-color !important;
+      }
+    }
+  }
+}

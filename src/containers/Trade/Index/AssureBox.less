@@ -1,0 +1,70 @@
+@import '../../../themes/mixin.less';
+
+.list_box {
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    .header {
+        border-bottom: 1px solid #f2f2f2;
+        .title {
+            display: inline-block;
+            padding: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .body {
+        padding: 15px 0 0 15px;
+        
+        .list {
+            border-bottom: 1px solid #f2f2f2;
+
+            .item {
+                margin-bottom: 15px;
+                padding-right: 15px;
+
+                .sub_des {
+                    font-size: 13px;
+                    color: @xhj-gray-light;
+                }
+            }
+        }
+
+        .primary {
+            color: @primary-color;
+        }
+
+        .des {
+            color: @primary-color;
+            .icon {
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+        }
+        
+    }
+
+    .footer {
+        padding: 15px;
+        .item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            span {
+                margin: 0 5px;
+            }
+
+            .btn_blue {
+                color: @xhj-blue;
+            }
+        }
+
+        .icon {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.formBox {
+    width: 100%;
+}
+
+.firstItem {
+    display: flex;
+    border: 1px solid #f2f2f2;
+
+    .verify {
+        height: 48px;
+
+        &:before {
+            border: none !important;
+            border-left: 0.02rem solid #ddd !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.secondItem {
+    border: 1px solid #f2f2f2;
+    border-top: none;
+}
+
+.input {
+    flex: 1;
+    height: 44px;
+
+    :global {
+        .am-list-line:after {
+            content: none !important;
+        }
+
+        .am-input-control {
+            input {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.btnSubmit {
+    margin-top: 75px;
+}

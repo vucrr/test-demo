@@ -1,0 +1,108 @@
+@import '../../../../../themes/vars.less';
+.storeBox {
+    margin: 16px 15px 12px 15px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    .contentBox {
+        position: relative;
+        display: flex;
+        margin: 0 15px;
+        padding: 18px 0 16px;
+        align-items: center;
+        color: #333;
+    }
+    .bottomLine {
+        border-bottom: 1px solid #eee;
+    }
+    .icon_location {
+        margin-right: 12px;
+        width: 20px;
+        color: #ED614E;
+        flex-shrink: 0;
+    }
+    .icon_arrow {
+        position: absolute;
+        right: 0;
+        width: 12px;
+        flex-shrink: 0;
+        color: #b0b0b0;
+    }
+    .store {
+        flex-basis: 80%;
+    }
+    .detail {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+    }
+    .contactBox {
+        display: flex;
+        padding: 12px 0;
+        align-items: center;
+        justify-content: space-evenly;
+        .item {
+            display: flex;
+            flex-basis: 50%;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            color: #333;
+            &:last-child {
+                border-left: 1px solid #eee;
+            }
+        }
+        .icon_map,
+        .icon_phone {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            color: #666;
+        }
+    }
+}
+
+.mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+}
+
+.callPanel {
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    width: calc(100% - 30px);
+
+    .info {
+        display: flex;
+        margin-bottom: 12px;
+        border-radius: 2px;
+        background-color: #fff;
+        div {
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            width: 100%;
+            &:first-child {
+                font-size: 14px;
+                color: #999999;
+                border-bottom: 1px solid #f2f2f2;
+            }
+            &:last-child {
+                font-size: 18px;
+                color: @primary-color;
+            }
+        }
+    }
+}
+

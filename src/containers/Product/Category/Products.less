@@ -1,0 +1,112 @@
+@import '../../../themes/mixin.less';
+
+.product_list_box {
+    background-color: #fff;
+    padding: 20px 12px 0;
+    // margin-left: 79px;
+    // margin-top: 91.5px;
+    // margin-bottom: 50px;
+    position: fixed;
+    top: 91.5px;
+    left: 79px;
+    right: 0;
+    bottom: calc(50px);
+    bottom: calc(50px + env(safe-area-inset-bottom));
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    min-height: calc(100vh - 91.5px - 50px);
+    min-height: calc(100vh - 91.5px - 50px - env(safe-area-inset-bottom));
+}
+
+.advert {
+    display: block;
+    margin-bottom: 20px;
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.product_list {
+    .item {
+        width: 47.8%;
+        margin-bottom: 12px;
+        color: #333;
+    }
+
+    .thumb {
+        width: 130px;
+        height: 130px;
+        background: #F6F7F9;
+        border-radius: 4px;
+        position: relative;
+        padding: 5px;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+        p {
+            position: absolute;
+            top: 4px;
+            left: 9px;
+            font-size: 13px;
+            line-height: 1;
+            padding: 3px 6px;
+            color: #FFFFFF;
+            text-align: center;
+            background-image: linear-gradient(-134deg, #FA7676 0%, #FB4040 100%);
+            border-radius: 4px 10px 10px;
+        }
+    }
+
+    .bottom {
+        line-height: 1;
+        padding: 8px;
+
+        .name {
+            height: 15px;
+            line-height: 15px;
+            font-size: 13px;
+            margin-bottom: 4px;
+
+            .ellipsis();
+        }
+        .offer {
+            font-size: 10px;
+            color: #666666;
+            margin-bottom: 8px;
+        }
+        .tags {
+            height: 13px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            span {
+                padding: 1px 3px;
+                line-height: 9px;
+                font-size: 9px;
+                color: #FF5544;
+                text-align: center;
+                border: 1px solid currentColor;
+                border-radius: 6.5px;
+                margin-right: 4px;
+                margin-bottom: 4px; // 兼容处理
+            }
+        }
+        .prices {
+            .price {
+                display: inline-block;
+                font-size: 14px;
+                color: #FE5649;
+            }
+            .line {
+                display: inline-block;
+                font-size: 10px;
+                color: #ccc;
+                text-decoration: line-through;
+                margin-left: 4px;
+            }
+        }
+    }
+}

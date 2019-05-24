@@ -1,0 +1,54 @@
+@import "../../../../themes/mixin.less";
+
+.title_box {
+    font-family: PingFangSC-Medium;
+    color: #fff;
+    padding: 0 13px 0 15px;
+    margin-bottom: 16px;
+
+    .link {
+        font-family: PingFang-SC-Regular;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: inherit;
+    }
+}
+
+.item_box {
+    padding: 0 15px 7px;
+    margin-bottom: 14px;
+}
+
+.carousel_list {
+    width: 100%;
+    margin-bottom: 20px;
+    // margin-left: 1px;
+
+    :global {
+        .swiper-pagination-bullets {
+            bottom: -15px !important;
+        }
+
+        .swiper-pagination-bullets > span {
+            opacity: 0.5;
+            background: #fff;
+            border-radius: 1px;
+            width: 8px;
+            height: 2px;
+        }
+
+        .swiper-pagination-bullets > .active {
+            opacity: 1;
+        }
+    }
+}
+
+.item {
+    width: 100%;
+    height: 285px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+}

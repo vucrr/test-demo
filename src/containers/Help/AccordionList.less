@@ -1,0 +1,73 @@
+.item_box {
+    background-color: #f8f8f8;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 23px;
+    p {
+        font-family: PingFangSC-Regular;
+        line-height: 23px;
+    }
+}
+
+.itemTitle {
+    background-color : #ffffff;
+    :global {
+        .am-list-header {
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color:#aaaaaa!important;
+            border-bottom:0 !important;
+        }
+
+        .am-list-body {
+            border: none !important;
+        }
+    }
+}
+
+.itemBox {
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    margin: 0 15px;
+
+    &::before {
+        background-color: #fff !important;
+    }
+
+    :global {
+        .am-list-body {
+            border: none !important;
+        }
+        .am-accordion-header {
+            height: inherit !important;
+            line-height: 1.5 !important;
+            text-overflow: inherit !important;
+            white-space: inherit !important;
+            padding:10px 0 6px;
+            color: #222222!important;
+            font-size: 14px!important;
+            background: #f8f8f8!important;
+            border: none!important;
+            i {
+                width: 12px !important;
+                height: 12px !important;
+            }
+        }
+
+        .am-accordion-header, .am-accordion-content-box {
+            border-bottom: none !important;
+            &:after {
+                background-color: #eee !important;
+                left: 15px !important;
+                right: 15px !important;
+                width: auto !important;
+            }
+        }
+
+        .am-accordion-item-active .am-accordion-header::after {
+            background-color: #f8f8f8 !important;
+        }
+    }
+}

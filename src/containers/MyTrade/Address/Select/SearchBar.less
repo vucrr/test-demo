@@ -1,0 +1,78 @@
+.searchBar {
+    position: fixed;
+    z-index: 100;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+    font-size: 14px;
+    overflow: visible;
+    .cityWrap {
+        display: flex;
+        align-items: center;
+        margin: 0 5px 0 15px;
+        color: #333;
+    }
+    .iconDown {
+        margin-left: 8px;
+    }
+    .searchWrap {
+        position: relative;
+        border-left: 1px solid #eee;
+
+        :global {
+            .am-search {
+                background-color: #fff;
+            }
+            .am-search-cancel {
+                display: none !important;
+            }
+
+            .am-search-input .am-search-synthetic-ph {
+                text-align: left;
+            }
+
+            .am-search.am-search-start .am-search-input .am-search-synthetic-ph {
+                padding-left: 0;
+            }
+
+            .am-search.am-search-start .am-search-input input[type=search] {
+                padding-left: 20px;
+            }
+        }
+
+        .tips_box {
+            position: absolute;
+            top: 44px;
+            left: 0;
+            background-color: #7EA0FF;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 10px;
+            color: #fff;
+            border-radius: 4px;
+            opacity: 0;
+            transition: all .25s ease-in-out;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: -16px;
+                width: 0;
+                height: 0;
+                border: 8px solid transparent;
+                border-bottom-color: #7EA0FF;
+            }
+
+            &.active {
+                top: 52px;
+                opacity: 1;
+            }
+        }
+    }
+}

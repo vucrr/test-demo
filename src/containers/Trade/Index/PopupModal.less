@@ -1,0 +1,45 @@
+@import '../../../themes/mixin.less';
+
+.popup_box {
+    height: 50vh;
+
+    .title {
+        color: @xhj-gray-dark;
+        font-size: 16px;
+    }
+    
+    .item {
+        padding: 10px 0;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .active {
+        background-color: #14a699;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .icon_check_box {
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        box-sizing: border-box;
+        border: 1px solid #E9E9E9;
+        background-color: #F8F8F8;
+        border-radius: 50%;
+    }
+}

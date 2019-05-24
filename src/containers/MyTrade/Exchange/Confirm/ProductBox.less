@@ -1,0 +1,104 @@
+.product_box {
+    padding-bottom: 8px;
+
+    .title {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: PingFangSC-Medium;
+        margin-bottom: 22px;
+        :global {
+            .am-list-content {
+                line-height: 1 !important;
+            }
+        }
+    }
+
+    .product {
+        background: #F8F8F8;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 12px;
+
+        .item {
+            padding: 18px 18px 21px;
+
+            span {
+                opacity: 0.5;
+                color: #333;
+                &.old {
+                    display: inline-flex;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                }
+                &.tag {
+                    opacity: 1;
+                    background: #D9F3F0;
+                    border-radius: 12px;
+                    display: inline-flex;
+                    padding: 4px 8px;
+                    font-size: 14px;
+                    color: #00AA99;
+                }
+            }
+    
+            img {
+                width: 82px;
+                height: 82px;
+                display: block;
+                margin: 16.5px auto;
+            }
+    
+            .desc {
+                opacity: 0.5;
+                color: #333;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; //（行数）
+                -webkit-box-orient: vertical;
+                line-height: 20px;
+            }
+
+            &.new {
+                .desc {
+                    opacity: 1;
+                    color: #222222;
+                }
+            }
+        }
+
+        .lottie_icon {
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(-50%, -50%);
+            >div{
+                width: 28px !important;
+                height: 28px !important;
+            }
+        }
+    }
+}
+
+.time_box {
+    background: #F8F8F8;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+
+    span {
+        font-size: 14px;
+        color: #AAAAAA;
+        display: block;
+        margin-bottom: 13px;
+    }
+
+    p {
+        font-family: PingFangSC-Medium;
+        font-size: 18px;
+        color: #00AA99;
+        line-height: 16px;
+    }
+}

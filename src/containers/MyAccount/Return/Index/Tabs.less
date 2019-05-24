@@ -1,0 +1,31 @@
+@import "../../../../themes/mixin";
+
+.container {
+    height: 46px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 0 #EEEEEE;
+    display: flex;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            line-height: 44px;
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+            color: @xhj-gray-dark;
+            transition: all 0.3s ease;
+
+            &.active {
+                color: @easeu-color;
+                border-color: @easeu-color;
+            }
+        }
+    }
+}

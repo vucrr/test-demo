@@ -1,0 +1,48 @@
+@import '../../../../themes/mixin.less';
+
+.upload {
+    background: #F8F8F8;
+    border-radius: 4px;
+    width: 96px;
+    height: 96px;
+
+    .upload_icon {
+        width: 32px;
+        height: 26px;
+    }
+
+    .thumb {
+        position: relative;
+
+        img {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        color: rgba(0, 0, 0, 0.5);
+        z-index: 997;
+    }
+}
+
+.upload_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 998;
+
+    .close {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 999;
+    }
+}

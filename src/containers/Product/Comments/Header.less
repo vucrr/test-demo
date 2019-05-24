@@ -1,0 +1,40 @@
+@import "../../../themes/mixin";
+
+.container {
+  height: 52px;
+  padding: 12px 15px;
+  display: flex;
+  box-sizing: border-box;
+  position: fixed;
+  top: 45px;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  background-color: @xhj-white;
+  border-bottom: 1px solid #eee;
+
+  a {
+    display: block;
+    min-width: 64px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 26px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: center;
+
+    &:last-child {
+      margin-left: 8px;
+    }
+
+    &.active {
+      border-color: @primary-color;
+      color: @primary-color;
+      background-color: rgba(254, 86, 73, 0.1);
+    }
+  }
+}

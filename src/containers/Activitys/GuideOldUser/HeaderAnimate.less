@@ -1,0 +1,82 @@
+.headeranimate {
+    position: relative;
+    z-index: 2;
+    height: 590px;
+    background-color: #f8e7e0;
+    .header_box {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        .tips {
+            font-size:16px;
+            font-weight:bold;
+            color:rgba(148,60,45,1);
+            text-align: center;
+            margin-top: 43px;
+            padding: 0 50px;
+        }
+        .timeBox {
+            margin-top: 18px;
+            font-size:15px;
+            font-weight:400;
+            color:rgba(148,60,45,1);
+            padding-left: 23px;
+            .timeNum {
+                width: 46px;
+                height: 55px;
+                margin-right: 8px;
+                background: url('images/activity/guild-old-user/timeBg.png') 0 0 no-repeat;
+                background-size: 100%;
+                font-size:40px;
+                font-weight:800;
+                color:rgba(255,255,255,1);
+                line-height:55px;
+                text-align: center;
+            }
+            .houeLeft {
+                margin-left: 8px;
+            }
+        }
+        .expired {
+            width: 60px;
+            height: 20px;
+            margin: 30px auto 0;
+            background-color: #CF90EC;
+            border-radius: 5px;
+            font-size:15px;
+            font-family:HiraginoSansGB-W3;
+            font-weight:100;
+            color:rgba(255,202,253,1);
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+    .bg_music {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        right: 14px;
+        top: 14px;
+        z-index: 10;
+    }
+    .bgMusicPlaying {
+        -webkit-animation:myRotate 10s linear infinite;
+        animation:myRotate 10s linear infinite;
+    }
+    @-webkit-keyframes myRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+    @keyframes myRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+    .countDown {
+        border: 1px solid red;
+        .timeNum {
+            border: 1px solid green;
+        }
+    }
+}

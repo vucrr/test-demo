@@ -1,0 +1,32 @@
+@import "../../../../themes/mixin";
+
+.headerTab {
+  width: 100vw;
+  height: 48px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  .tab {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &.active {
+      color: @primary-color;
+      &:after {
+        width: 50px;
+        height: 2px;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: @primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../../themes/mixin.less';
+
+.bottom_box {
+    background-color: #fff;
+    position: fixed;
+    z-index: 995;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    padding: 6px 15px;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.05), 0 -2px 4px 0 rgba(0,0,0,0.03);
+    .left_box {
+        font-size: 10px;
+        margin-bottom: env(safe-area-inset-bottom);
+        .icon {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 4px;
+        }
+        .icon_box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            color: @xhj-gray-light;
+            width: 100%;
+            white-space: nowrap;
+        }
+    }
+
+    .btn_red {
+        width: 195px;
+        height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background-color: @primary-color;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        &::before {
+            border: none !important;
+            border-radius: 0 !important;
+        }
+    }
+
+    :global {
+        .am-button.am-button-disabled {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.container {
+    padding: 12px;
+    position: relative;
+
+    .title {
+        padding: 0 0 20px;
+
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            font-weight: normal;
+            padding-right: 10px;
+            transform: translateY(4px);
+        }
+
+        p {
+            padding-left: 10px;
+            position: relative;
+
+            font-size: 13px;
+            color: #666666;
+            letter-spacing: 0;
+            line-height: 13px;
+
+            &::before {
+                display: block;
+                content: "";
+                width: 1px;
+                height: 16px;
+                background-color: #ddd;
+                position: absolute;
+                left: 0;
+                top: -2px;
+            }
+        }
+    }
+
+    .swiper_wrap {
+        width: 351px;
+        height: 140px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.23);
+        position: relative;
+    }
+
+    .topSwiper {
+        width: 351px;
+        height: 140px;
+        border-radius: 8px;
+        overflow: hidden;
+        // https://segmentfault.com/q/1010000006821666
+        -webkit-transform: translateZ(0);
+        -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+
+        img {
+            width: 351px;
+            height: 140px;
+            display: block;
+        }
+
+        :global {
+            .swiper-pagination-bullets {
+                bottom: 6px;
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 2px;
+                    background: rgba(255,255,255,0.40);
+                    border-radius: 1px;
+
+                    &.active {
+                        background: #FFFFFF;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .tips {
+        margin: 12px 16px;
+
+        .tip {
+            position: relative;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        img {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    }
+
+    &.festival {
+        .bg {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: -44px;
+            height: 391px;
+        }
+
+        .title h1, .title p {
+            color: #fff;
+        }
+
+        .tips .tip {
+            color: rgba(255,255,255,0.70);
+        }
+    }
+}
